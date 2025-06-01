@@ -12,7 +12,7 @@ const app = express();
 connectDB();
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: ["http://localhost:3000", 'https://pinaq-1.onrender.com'],
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:3005/api/blogs'; // Update with your backend URL
+const API_BASE_URL = 'https://pinaq.onrender.com/api/blogs'; // Update with your backend URL
 
 // Public endpoints
 export const getPublicBlogs = async () => {
