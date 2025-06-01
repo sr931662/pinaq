@@ -12,7 +12,7 @@ const app = express();
 connectDB();
 
 const corsOptions = {
-  origin: ["http://localhost:3000", 'https://pinaq-1.onrender.com'],
+  origin: ["http://localhost:3000", 'https://pinaq-1.onrender.com', 'https://pinaq.vercel.app'],
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };
