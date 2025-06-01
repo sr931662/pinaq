@@ -1,0 +1,464 @@
+/* Base Styles */
+.main {
+  padding-top: 4rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.sectionDescription {
+  font-size: 1.125rem;
+  color: #4b5563;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.primaryText {
+  color: #2fdce8;
+}
+/* .featureIcon {
+  font-size: 50px;
+  color: var(--primary);
+} */
+
+/* Hero Section */
+.heroSection {
+  padding: 6rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), 
+              url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'));
+  background-size: cover;
+  background-position: center;
+  color: black;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.heroDescription {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Services Section */
+.servicesSection {
+  padding: 5rem 0;
+  background-color: #f9fafb;
+}
+
+.servicesGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.serviceCard {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cardIcon {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(47, 220, 232, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.cardIcon i {
+  font-size: 1.75rem;
+  color: #2fdce8;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.cardFeatures {
+  margin-bottom: 2rem;
+  padding-left: 1.25rem;
+}
+
+.cardFeatures li {
+  margin-bottom: 0.5rem;
+  color: #374151;
+  position: relative;
+}
+
+.cardFeatures li::before {
+  content: "•";
+  color: #2fdce8;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.cardLink {
+  color: #2fdce8;
+  font-weight: 600;
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.cardLink:hover {
+  text-decoration: underline;
+}
+
+/* Features Section */
+.featuresSection {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+.featuresGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.featureCard {
+  text-align: center;
+  padding: 2rem;
+}
+
+.featureIcon {
+  width: 47px;
+  height: 47px;
+  margin: 0 auto ;
+  color: var(--primary);
+  /* background-color: rgba(47, 220, 232, 0.1); */
+  /* border-radius: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featureIcon i {
+  font-size: 1.75rem;
+  color: #2fdce8;
+}
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.featureDescription {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 5rem 0;
+  background: linear-gradient(rgba(10, 26, 53, 0.9), 
+              url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'));
+  background-size: cover;
+  background-position: center;
+  color: black;
+  text-align: center;
+}
+
+.ctaContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.ctaDescription {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  background-color: #2fdce8;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.primaryButton:hover {
+  background-color: #25c4d0;
+}
+
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+:global(.dark) .secondaryButton {
+  border: 2px solid white;
+  color: white;
+
+}
+
+.secondaryButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Dark Mode Styles */
+:global(.dark) .main {
+  background-color: #1a1a1a;
+}
+
+:global(.dark) .sectionTitle,
+:global(.dark) .cardTitle,
+:global(.dark) .featureTitle,
+:global(.dark) .ctaTitle {
+  color: white;
+}
+
+:global(.dark) .sectionDescription,
+:global(.dark) .cardDescription,
+:global(.dark) .featureDescription,
+:global(.dark) .ctaDescription {
+  color: #d1d5db;
+}
+
+:global(.dark) .servicesSection {
+  background-color: #111827;
+}
+
+:global(.dark) .serviceCard,
+:global(.dark) .featuresSection {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+:global(.dark) .cardFeatures li,
+:global(.dark) .cardFeatures li::before {
+  color: #d1d5db;
+}
+
+:global(.dark) .heroSection {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), 
+              url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'));
+}
+
+:global(.dark) .ctaSection {
+  background: linear-gradient(rgba(10, 26, 53, 0.95), 
+              url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'));
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.25rem;
+  }
+  
+  .heroDescription {
+    font-size: 1.1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+  
+  .ctaTitle {
+    font-size: 2rem;
+  }
+}
+
+/* FAQ Section */
+.faqSection {
+  padding: 5rem 0;
+  background-color: #f8f8f8;
+}
+
+.faqContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.faqItem:hover {
+  border-color: #2fdce8;
+}
+
+.faqQuestion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faqQuestion:hover {
+  background-color: #f9fafb;
+}
+
+.faqQuestionText {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+  text-align: left;
+  flex: 1;
+}
+
+.faqIcon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
+
+.faqIcon i {
+  font-size: 1.25rem;
+  color: #6b7280;
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faqAnswerText {
+  padding: 0 1.5rem 1.5rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.faqActive {
+  border-color: #2fdce8;
+}
+
+.faqActive .faqQuestion {
+  background-color: #f9fafb;
+}
+
+.faqActive .faqIcon {
+  transform: rotate(180deg);
+}
+
+.faqActive .faqAnswer {
+  max-height: 500px;
+}
+
+/* Dark Mode FAQ Styles */
+:global(.dark) .faqSection {
+  background-color: rgba(10, 26, 53);
+}
+
+:global(.dark) .faqItem {
+  border-color: #374151;
+  background-color: #1f2937;
+}
+
+:global(.dark) .faqQuestion:hover,
+:global(.dark) .faqActive .faqQuestion {
+  background-color: #111827;
+}
+
+:global(.dark) .faqQuestionText {
+  color: #f3f4f6;
+}
+
+:global(.dark) .faqIcon i {
+  color: #9ca3af;
+}
+
+:global(.dark) .faqAnswerText {
+  color: #d1d5db;
+}
+
+:global(.dark) .faqActive {
+  border-color: #2fdce8;
+}

@@ -1,0 +1,356 @@
+.loginContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fafb;
+  padding: 2rem;
+}
+
+.loginWrapper {
+  width: 100%;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginLeft {
+  display: none;
+  background-color: #0A1A35;
+  background-image: url('https://img.freepik.com/premium-photo/dark-blue-background-with-pattern-geometric-shapes-design-element_947073-18126.jpg');
+  background-size: cover;
+  color: white;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.loginIllustration {
+  width: 100%;
+  height: 300px;
+  background-image: url('https://readdy.ai/api/search-image?query=3D%20illustration%20of%20a%20secure%20login%20interface%20with%20biometric%20authentication%2C%20dark%20blue%20theme%20with%20glowing%20elements%2C%20cybersecurity%20concept%2C%20futuristic%20design');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 2rem;
+}
+
+.loginLeftContent {
+  text-align: center;
+}
+
+.loginLeftTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.loginLeftText {
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.loginRight {
+  padding: 2rem 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.loginHeader {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.loginLogo {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(10, 26, 53, 0.05);
+  border-radius: 50%;
+}
+
+.loginLogo i {
+  font-size: 1.75rem;
+  color: #00F5FF;
+}
+
+.loginTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: #0A1A35;
+}
+
+.loginSubtitle {
+  color: #6b7280;
+}
+
+.loginForm {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.inputContainer i {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.formInput {
+  width: 100%;
+  padding: 0.875rem 1rem 0.875rem 2.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #00F5FF;
+  box-shadow: 0 0 0 3px rgba(0, 245, 255, 0.1);
+}
+
+.forgotPassword {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.forgotPasswordLink {
+  color: #6b7280;
+  font-size: 0.875rem;
+  transition: color 0.3s;
+}
+
+.forgotPasswordLink:hover {
+  color: #00F5FF;
+  text-decoration: underline;
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.checkboxInput {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  accent-color: #00F5FF;
+}
+
+.checkboxLabel {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 1rem;
+  background-color: #00F5FF;
+  color: #0A1A35;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 1.5rem;
+}
+
+.loginButton:hover {
+  background-color: rgba(0, 245, 255, 0.9);
+  box-shadow: 0 0 15px rgba(0, 245, 255, 0.3);
+}
+
+.divider {
+  position: relative;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #e5e7eb;
+  z-index: 1;
+}
+
+.dividerText {
+  position: relative;
+  display: inline-block;
+  padding: 0 1rem;
+  background-color: white;
+  color: #6b7280;
+  font-size: 0.875rem;
+  z-index: 2;
+}
+
+.socialLogin {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.socialButton {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  background-color: white;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.socialButton:hover {
+  background-color: #f9fafb;
+  transform: translateY(-2px);
+}
+
+.socialButton i {
+  font-size: 1.25rem;
+}
+
+.signUpLink {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.signUpText {
+  color: #00F5FF;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.signUpText:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .loginWrapper {
+    flex-direction: row;
+    min-height: 600px;
+  }
+
+  .loginLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .loginRight {
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+/* Add this to your existing dark mode styles */
+:global(.dark) .loginContainer {
+  background-color: #121212;
+}
+
+:global(.dark) .loginLeft {
+  background-color: #0A1A35;
+  /* Keep or adjust the background image for dark mode */
+  background-image: url('https://img.freepik.com/premium-photo/dark-blue-background-with-pattern-geometric-shapes-design-element_947073-18126.jpg');
+}
+
+:global(.dark) .loginLeftTitle,
+:global(.dark) .loginLeftText {
+  color: #f0f0f0;
+}
+/* Dark Mode Styles */
+:global(.dark) .loginWrapper {
+  background-color: #1a1a1a;
+}
+
+:global(.dark) .loginRight {
+  background-color: #1a1a1a;
+}
+
+:global(.dark) .loginTitle {
+  color: white;
+}
+
+:global(.dark) .loginSubtitle {
+  color: #d1d5db;
+}
+
+:global(.dark) .formLabel {
+  color: #e5e5e5;
+}
+
+:global(.dark) .formInput {
+  background-color: #262626;
+  border-color: #404040;
+  color: white;
+}
+
+:global(.dark) .checkboxLabel {
+  color: #d1d5db;
+}
+
+:global(.dark) .divider::before {
+  background-color: #404040;
+}
+
+:global(.dark) .dividerText {
+  background-color: #1a1a1a;
+}
+
+:global(.dark) .socialButton {
+  background-color: #262626;
+  border-color: #404040;
+  color: #d1d5db;
+}
+
+:global(.dark) .socialButton:hover {
+  background-color: #333;
+}
+
+:global(.dark) .signUpLink {
+  color: #d1d5db;
+}

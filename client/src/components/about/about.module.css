@@ -1,0 +1,741 @@
+/* Base Styles */
+.aboutContainer {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Hero Section */
+  .heroSection {
+    min-height: 60vh;
+    padding-top: 20rem;
+    padding-bottom: 4rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.1)), 
+                      url('https://readdy.ai/api/search-image?query=professional%2520office%2520environment%2520with%2520modern%2520design%252C%2520bright%2520open%2520workspace%2520with%2520yellow%2520accents%252C%2520team%2520members%2520collaborating%2520at%2520desks%2520with%2520computers%252C%2520large%2520windows%2520with%2520natural%2520light%252C%2520minimalist%2520furniture%2520with%2520clean%2520lines%252C%2520tech%2520company%2520atmosphere%2520with%2520innovative%2520feel%252C%2520subtle%2520security%2520elements%2520visible&width=1600&height=600&seq=11&orientation=landscape');
+    background-size: cover;
+    background-position: right center;
+  }
+  
+  .heroContainer {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  
+  .breadcrumbLink {
+    color: #4b5563;
+    transition: color 0.3s;
+  }
+  
+  .breadcrumbLink:hover {
+    color: #00F5FF;
+  }
+  
+  .breadcrumbSeparator {
+    margin: 0 0.5rem;
+    color: #4b5563;
+  }
+  
+  .breadcrumbCurrent {
+    color: #0A1A35;
+    font-weight: 500;
+  }
+  
+  .heroTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: #0A1A35;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.25rem;
+    color: #374151;
+    margin-bottom: 2rem;
+    max-width: 36rem;
+  }
+  .featureIcon {
+    font-size: var(--space-xl);
+    color: var(--primary);
+  }
+
+  .primaryButton {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #00F5FF;
+    color: #0A1A35;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s;
+    white-space: nowrap;
+  }
+  
+  .primaryButton:hover {
+    background-color: rgba(34, 246, 253, 0.9);
+    box-shadow: 0 0 15px rgba(34, 224, 253, 0.5);
+  }
+  
+  /* Section Styles */
+  .sectionWhite {
+    background-color: white;
+    padding: 5rem 0;
+  }
+  
+  .sectionGray {
+    background-color: #f9fafb;
+    padding: 5rem 0;
+  }
+  
+  .sectionContainer {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .sectionHeader {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: #0A1A35;
+  }
+  
+  .sectionDescription {
+    font-size: 1.125rem;
+    color: #4b5563;
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+  
+  /* Two Column Layout */
+  .twoColumnLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .twoColumnLayoutReverse {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  
+  .textColumn {
+    flex: 1;
+  }
+  
+  .imageColumn {
+    flex: 1;
+  }
+  
+  .imageWrapper {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .aboutImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .sectionText {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .highlight {
+    font-weight: 600;
+    color: #0A1A35;
+  }
+  
+  @media (min-width: 768px) {
+    .twoColumnLayout,
+    .twoColumnLayoutReverse {
+      flex-direction: row;
+      align-items: center;
+      gap: 4rem;
+    }
+    
+    .heroTitle {
+      font-size: 3.75rem;
+    }
+  }
+  
+  /* Values Section */
+  .valuesGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 72rem;
+    margin: 0 auto;
+  }
+  
+  .valueCard {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .valueCard.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .valueIcon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(34, 213, 253, 0.1);
+    border-radius: 9999px;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .valueIcon i {
+    font-size: 2rem;
+    color: #00F5FF;
+  }
+  
+  .valueTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    text-align: center;
+    color: #0A1A35;
+  }
+  
+  .valueDescription {
+    color: #4b5563;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  @media (min-width: 768px) {
+    .valuesGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Team Section */
+  .teamGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .teamCard {
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  
+  .teamCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .teamImage {
+    height: 16rem;
+    overflow: hidden;
+  }
+  
+  .teamMemberImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  .teamContent {
+    padding: 1.5rem;
+  }
+  
+  .teamName {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: #0c346c;
+  }
+  
+  .teamPosition {
+    color: #0b2c48;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .teamBio {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .socialLink {
+    color: #9ca3af;
+    font-size: 1.25rem;
+    transition: color 0.3s;
+  }
+  
+  .socialLink:hover {
+    color: #00F5FF;
+  }
+  
+  @media (min-width: 640px) {
+    .teamGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .teamGrid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Timeline Section */
+  .timelineGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .timelineItem {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .timelineIcon {
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(34, 209, 253, 0.1);
+    border-radius: 9999px;
+  }
+  
+  .timelineIcon i {
+    font-size: 1.5rem;
+    color: #00F5FF;
+  }
+  
+  .timelineContent {
+    flex: 1;
+  }
+  
+  .timelineYear {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: #0A1A35;
+  }
+  
+  .timelineDescription {
+    color: #4b5563;
+    line-height: 1.6;
+  }
+  
+  @media (min-width: 768px) {
+    .timelineGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Locations Section */
+  .mapContainer {
+    position: relative;
+    height: 24rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 3rem;
+  }
+  
+  .mapPlaceholder {
+    position: absolute;
+    inset: 0;
+    background-color: #e5e7eb;
+    background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .locationsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .locationCard {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .locationHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .locationIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(34, 231, 253, 0.1);
+    border-radius: 9999px;
+    margin-right: 1rem;
+  }
+  
+  .locationIcon i {
+    color: #00F5FF;
+  }
+  
+  .locationName {
+    font-size: 1.125rem;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    color: #0A1A35;
+  }
+  
+  .locationAddress {
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  
+  .locationPhone {
+    color: #4b5563;
+  }
+  
+  @media (min-width: 640px) {
+    .locationsGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .locationsGrid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Testimonials Section */
+  .testimonialsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  
+  .testimonialCard {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonialRating {
+    color: #00F5FF;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonialText {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-style: italic;
+  }
+  
+  .testimonialAuthor {
+    display: flex;
+    align-items: center;
+  }
+  
+  .authorIcon {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(34, 198, 253, 0.1);
+    border-radius: 9999px;
+    margin-right: 1rem;
+  }
+  
+  .authorIcon i {
+    color: #00F5FF;
+  }
+  
+  .authorInfo {
+    flex: 1;
+  }
+  
+  .authorName {
+    font-weight: 600;
+    color: #0A1A35;
+    margin-bottom: 0.25rem;
+  }
+  
+  .authorPosition {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  @media (min-width: 768px) {
+    .testimonialsGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Join Team Section */
+  .joinTeamSection {
+    background-color: #00F5FF;
+    padding: 4rem 0;
+  }
+  
+  .joinTeamContainer {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .joinTeamContent {
+    flex: 1;
+  }
+  
+  .joinTeamTitle {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: #0A1A35;
+  }
+  
+  .joinTeamDescription {
+    font-size: 1.125rem;
+    color: #0A1A35;
+    max-width: 36rem;
+  }
+  
+  .joinTeamButton {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: #0A1A35;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s;
+    white-space: nowrap;
+  }
+  
+  .joinTeamButton:hover {
+    background-color: rgba(10, 26, 53, 0.9);
+  }
+  
+  .joinTeamButton i {
+    margin-right: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .joinTeamContainer {
+      flex-direction: row;
+    }
+  }
+  
+  /* Newsletter Section */
+  .newsletterSection {
+    background-color: #f9fafb;
+    padding: 5rem 0;
+  }
+  
+  .newsletterContainer {
+    width: 100%;
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .newsletterContent {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .newsletterTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: #0A1A35;
+    text-align: center;
+  }
+  
+  .newsletterDescription {
+    color: #4b5563;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .newsletterForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .newsletterInput {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    color: #4b5563;
+  }
+  
+  .newsletterInput:focus {
+    outline: none;
+    border-color: #00F5FF;
+  }
+  
+  .newsletterButton {
+    padding: 0.75rem 1.5rem;
+    background-color: #00F5FF;
+    color: #0A1A35;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .newsletterButton:hover {
+    background-color: rgba(34, 235, 253, 0.9);
+  }
+  
+  .newsletterPrivacy {
+    color: #6b7280;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .newsletterForm {
+      flex-direction: row;
+    }
+  }
+  
+  /* Dark Mode Styles */
+  :global(.dark) .heroSection {
+    background-image: linear-gradient(to right, rgba(26, 26, 26, 0.9) 40%, rgba(26, 26, 26, 0.1)), 
+                      url('https://readdy.ai/api/search-image?query=professional%2520office%2520environment%2520with%2520modern%2520design%252C%2520bright%2520open%2520workspace%2520with%2520yellow%2520accents%252C%2520team%2520members%2520collaborating%2520at%2520desks%2520with%2520computers%252C%2520large%2520windows%2520with%2520natural%2520light%252C%2520minimalist%2520furniture%2520with%2520clean%2520lines%252C%2520tech%2520company%2520atmosphere%2520with%2520innovative%2520feel%252C%2520subtle%2520security%2520elements%2520visible&width=1600&height=600&seq=11&orientation=landscape');
+  }
+  
+  :global(.dark) .heroTitle,
+  :global(.dark) .sectionTitle,
+  :global(.dark) .teamName,
+  :global(.dark) .teamPosition,
+  :global(.dark) .timelineYear,
+  :global(.dark) .locationName,
+  :global(.dark) .authorName,
+  :global(.dark) .newsletterTitle {
+    color: white;
+  }
+  
+  :global(.dark) .heroSubtitle,
+  :global(.dark) .sectionDescription,
+  :global(.dark) .sectionText,
+  :global(.dark) .valueDescription,
+  :global(.dark) .teamBio,
+  :global(.dark) .timelineDescription,
+  :global(.dark) .locationAddress,
+  :global(.dark) .locationPhone,
+  :global(.dark) .testimonialText,
+  :global(.dark) .newsletterDescription {
+    color: #e5e5e5;
+  }
+  
+  :global(.dark) .breadcrumbCurrent {
+    color: white;
+  }
+  
+  :global(.dark) .sectionWhite,
+  :global(.dark) .newsletterSection {
+    background-color: #1a1a1a;
+  }
+  
+  :global(.dark) .sectionGray {
+    background-color: #262626;
+  }
+  
+  :global(.dark) .valueCard,
+  :global(.dark) .teamCard,
+  :global(.dark) .locationCard,
+  :global(.dark) .testimonialCard,
+  :global(.dark) .newsletterContent {
+    background-color: #262626;
+    border-color: #404040;
+  }
+  
+  :global(.dark) .newsletterInput {
+    background-color: #333;
+    color: white;
+    border-color: #404040;
+  }
+  
+  :global(.dark) .newsletterInput:focus {
+    border-color: #00F5FF;
+  }

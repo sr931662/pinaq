@@ -1,0 +1,165 @@
+/* Base Card Styles */
+.profileCard {
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  position: relative;
+  z-index: 100;
+}
+
+:global(.dark) .profileCard {
+  background: #2d3748;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Section */
+.cardHeader {
+  display: flex;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #00F5FF 0%, #0ea5e9 100%);
+  color: white;
+  align-items: center;
+  gap: 1rem;
+}
+
+:global(.dark) .cardHeader {
+  background: linear-gradient(135deg, #0e7490 0%, #0369a1 100%);
+}
+
+.avatarContainer {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatarFallback {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.userInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.userName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.2rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userEmail {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin: 0 0 0.3rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userCompany {
+  font-size: 0.8rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.companyIcon {
+  font-size: 0.9rem;
+}
+
+/* Body Section */
+.cardBody {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+:global(.dark) .cardBody {
+  border-bottom-color: #4a5568;
+}
+
+.profileButton,
+.settingsButton {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 1.5rem;
+  color: #4a5568;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+  gap: 0.8rem;
+}
+
+:global(.dark) .profileButton,
+:global(.dark) .settingsButton {
+  color: #cbd5e0;
+}
+
+.profileButton:hover,
+.settingsButton:hover {
+  background: #f7fafc;
+  color: #00F5FF;
+}
+
+:global(.dark) .profileButton:hover,
+:global(.dark) .settingsButton:hover {
+  background: #1a202c;
+  color: #00F5FF;
+}
+
+.buttonIcon {
+  font-size: 1.1rem;
+}
+
+/* Footer Section */
+.cardFooter {
+  padding: 1rem 1.5rem;
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #e53e3e;
+  cursor: pointer;
+  font-size: 0.95rem;
+  gap: 0.8rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  transition: color 0.2s;
+}
+
+.logoutButton:hover {
+  color: #c53030;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.profileCard {
+  animation: fadeIn 0.3s ease-out forwards;
+}

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - PinaqTech</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#FDCD22',secondary:'#00F5FF'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+.tech-font {
+  font-family: 'JetBrains Mono', monospace;
+}
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background-color: rgba(10, 26, 53, 0.8);
+}
+input:focus {
+  outline: none;
+}
+.back-to-top {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.policy-section {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.policy-section.expanded {
+  max-height: 2000px;
+}
+.toggle-icon {
+  transition: transform 0.3s ease;
+}
+.expanded .toggle-icon {
+  transform: rotate(180deg);
+}
+</style>
+</head>
+<body class="bg-white text-gray-800 min-h-screen">
+<!-- Header Navigation -->
+<header class="fixed w-full z-50 glass-effect">
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center">
+        <a href="https://readdy.ai/home/07371c7c-82b9-4af1-831e-2d88c3f1d6bb/1d92c513-8c19-40b3-a146-91be7a923bf6" data-readdy="true" class="text-2xl font-['Pacifico'] text-white">logo</a>
+      </div>
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="https://readdy.ai/home/07371c7c-82b9-4af1-831e-2d88c3f1d6bb/77c26669-7f4f-4155-996b-a4b590365260" data-readdy="true" class="text-white hover:text-secondary transition-colors">Products</a>
+        <a href="#" class="text-white hover:text-secondary transition-colors">Solutions</a>
+        <a href="#" class="text-white hover:text-secondary transition-colors">Resources</a>
+        <a href="#" class="text-white hover:text-secondary transition-colors">About Us</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <a href="https://readdy.ai/home/07371c7c-82b9-4af1-831e-2d88c3f1d6bb/1d92c513-8c19-40b3-a146-91be7a923bf6" data-readdy="true" class="hidden md:inline-block px-4 py-2 text-white border border-white rounded-button hover:bg-white hover:text-dark transition-colors whitespace-nowrap">Back to Home</a>
+        <a href="#" class="px-4 py-2 bg-secondary text-dark font-medium rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap">Contact Us</a>
+        <button class="md:hidden w-10 h-10 flex items-center justify-center text-white">
+          <i class="ri-menu-line ri-lg"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Page Header -->
+<section class="pt-32 pb-12 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex items-center mb-6">
+        <a href="https://readdy.ai/home/07371c7c-82b9-4af1-831e-2d88c3f1d6bb/1d92c513-8c19-40b3-a146-91be7a923bf6" data-readdy="true" class="flex items-center text-gray-600 hover:text-secondary transition-colors">
+          <i class="ri-arrow-left-line mr-2"></i>
+          <span>Back to Home</span>
+        </a>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 tech-font text-dark">Privacy Policy</h1>
+      <p class="text-lg text-gray-600 mb-8">Last Updated: May 5, 2025</p>
+      <div class="flex flex-wrap gap-4 mb-8">
+        <a href="#information-collection" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition-colors">Information Collection</a>
+        <a href="#data-usage" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition-colors">Data Usage</a>
+        <a href="#security" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition-colors">Security</a>
+        <a href="#user-rights" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition-colors">User Rights</a>
+        <a href="#cookies" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition-colors">Cookies</a>
+        <a href="#contact" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition-colors">Contact</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Main Content -->
+<section class="py-12 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto">
+      <!-- Introduction -->
+      <div class="mb-12">
+        <p class="text-lg text-gray-700 mb-6">At PinaqTech, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our cybersecurity services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.</p>
+        <p class="text-lg text-gray-700">We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the "Last Updated" date of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates.</p>
+      </div>
+
+      <!-- Information Collection -->
+      <div id="information-collection" class="mb-12">
+        <div class="flex items-center justify-between cursor-pointer policy-toggle">
+          <h2 class="text-2xl font-bold tech-font text-dark">Information Collection</h2>
+          <div class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full toggle-icon">
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+        </div>
+        <div class="policy-section expanded mt-4">
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Personal Data</h3>
+            <p class="text-gray-700 mb-4">We may collect personal identification information from you in a variety of ways, including, but not limited to, when you visit our site, register on the site, subscribe to our newsletter, respond to a survey, fill out a form, or in connection with other activities, services, features or resources we make available on our Site. You may be asked for, as appropriate:</p>
+            <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+              <li>Name and job title</li>
+              <li>Contact information including email address and phone number</li>
+              <li>Company name and address</li>
+              <li>Demographic information such as industry and company size</li>
+              <li>Other information relevant to customer surveys and/or offers</li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Technical Data</h3>
+            <p class="text-gray-700 mb-4">When you access our services, we may automatically collect certain technical information about your device and usage, including:</p>
+            <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+              <li>IP address and location data</li>
+              <li>Browser type and version</li>
+              <li>Operating system</li>
+              <li>Device information</li>
+              <li>Usage patterns and preferences</li>
+              <li>Log files and analytics data</li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Service Data</h3>
+            <p class="text-gray-700">When using our cybersecurity services, we may collect and process data related to your IT infrastructure, network traffic, security events, and other information necessary to provide our security services. This may include:</p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>Network traffic metadata</li>
+              <li>Security event logs</li>
+              <li>System performance data</li>
+              <li>Threat intelligence information</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Usage -->
+      <div id="data-usage" class="mb-12">
+        <div class="flex items-center justify-between cursor-pointer policy-toggle">
+          <h2 class="text-2xl font-bold tech-font text-dark">Data Usage</h2>
+          <div class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full toggle-icon">
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+        </div>
+        <div class="policy-section mt-4">
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <p class="text-gray-700 mb-4">PinaqTech collects and uses your personal information for the following purposes:</p>
+            
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Service Provision and Improvement</h3>
+            <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+              <li>To provide and maintain our services</li>
+              <li>To improve our website and services</li>
+              <li>To personalize user experience</li>
+              <li>To troubleshoot and resolve technical issues</li>
+              <li>To develop new products, services, features, and functionality</li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Communication</h3>
+            <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+              <li>To send you service announcements and updates</li>
+              <li>To respond to your comments, questions, and requests</li>
+              <li>To provide customer support and assistance</li>
+              <li>To send marketing and promotional communications (with your consent)</li>
+              <li>To inform you about changes to our terms, conditions, and policies</li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Security and Legal Compliance</h3>
+            <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+              <li>To detect, prevent, and address technical issues and security threats</li>
+              <li>To protect against fraudulent, unauthorized, or illegal activity</li>
+              <li>To enforce our terms of service and other legal rights</li>
+              <li>To comply with applicable laws, regulations, and legal processes</li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Analytics and Research</h3>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>To analyze usage patterns and trends</li>
+              <li>To measure the effectiveness of our marketing campaigns</li>
+              <li>To conduct research and development</li>
+              <li>To generate aggregated, non-identifying analytics and statistics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Security Measures -->
+      <div id="security" class="mb-12">
+        <div class="flex items-center justify-between cursor-pointer policy-toggle">
+          <h2 class="text-2xl font-bold tech-font text-dark">Security Measures</h2>
+          <div class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full toggle-icon">
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+        </div>
+        <div class="policy-section mt-4">
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <p class="text-gray-700 mb-6">We implement a variety of security measures to maintain the safety of your personal information when you enter, submit, or access your personal information. We are committed to ensuring that your information is secure.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
+                <div class="w-12 h-12 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mb-4">
+                  <i class="ri-lock-line text-secondary ri-lg"></i>
+                </div>
+                <h3 class="text-lg font-semibold mb-2 text-gray-800">Data Encryption</h3>
+                <p class="text-gray-700">All sensitive data is encrypted using industry-standard encryption protocols during transmission and storage.</p>
+              </div>
+              
+              <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
+                <div class="w-12 h-12 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mb-4">
+                  <i class="ri-shield-check-line text-secondary ri-lg"></i>
+                </div>
+                <h3 class="text-lg font-semibold mb-2 text-gray-800">Access Controls</h3>
+                <p class="text-gray-700">Strict access controls and authentication mechanisms limit data access to authorized personnel only.</p>
+              </div>
+              
+              <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
+                <div class="w-12 h-12 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mb-4">
+                  <i class="ri-eye-line text-secondary ri-lg"></i>
+                </div>
+                <h3 class="text-lg font-semibold mb-2 text-gray-800">Monitoring</h3>
+                <p class="text-gray-700">Continuous monitoring systems detect and respond to suspicious activities and potential security breaches.</p>
+              </div>
+              
+              <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
+                <div class="w-12 h-12 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mb-4">
+                  <i class="ri-refresh-line text-secondary ri-lg"></i>
+                </div>
+                <h3 class="text-lg font-semibold mb-2 text-gray-800">Regular Audits</h3>
+                <p class="text-gray-700">We conduct regular security audits and vulnerability assessments to identify and address potential risks.</p>
+              </div>
+            </div>
+            
+            <p class="text-gray-700 mb-4">Despite our best efforts, no method of electronic transmission or storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.</p>
+            
+            <p class="text-gray-700">In the event of a data breach that affects your personal information, we will notify you in accordance with applicable laws and regulations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Rights -->
+      <div id="user-rights" class="mb-12">
+        <div class="flex items-center justify-between cursor-pointer policy-toggle">
+          <h2 class="text-2xl font-bold tech-font text-dark">User Rights</h2>
+          <div class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full toggle-icon">
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+        </div>
+        <div class="policy-section mt-4">
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <p class="text-gray-700 mb-6">You have certain rights regarding your personal information. Depending on your location and applicable laws, these rights may include:</p>
+            
+            <div class="space-y-6">
+              <div class="flex">
+                <div class="w-12 h-12 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mr-4 shrink-0">
+                  <i class="ri-information-line text-secondary ri-lg"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold mb-2 text-gray-800">Right to Access</h3>
+                  <p class="text-gray-700">You have the right to request copies of your personal information that we hold. We may charge a reasonable fee for this service if allowed by applicable law.</p>
+                </div>
+              </div>
+              
+              <div class="flex">
+                <div class="w-12 h-12 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mr-4 shrink-0">
+                  <i class="ri-edit-line text-secondary ri-lg"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold mb-2 text-gray-800">Right to Rectification</h3>
+                  <p class="text-gray-700">You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete.</p>
+                </div>
+              </div>
+              
+              <div class="flex">
+                <div class="w-12 h-12 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mr-4 shrink-0">
+                  <i class="ri-delete-bin-line text-secondary ri-lg"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold mb-2 text-gray-800">Right to Erasure</h3>
+                  <p class="text-gray-700">You have the right to request that we erase your personal information, under certain conditions. This is sometimes referred to as the "right to be forgotten."</p>
+                </div>
+              </div>
+              
+              <div class="flex">
+                <div class="w-12 h-12 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mr-4 shrink-0">
+                  <i class="ri-forbid-line text-secondary ri-lg"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold mb-2 text-gray-800">Right to Restrict Processing</h3>
+                  <p class="text-gray-700">You have the right to request that we restrict the processing of your personal information, under certain conditions.</p>
+                </div>
+              </div>
+              
+              <div class="flex">
+                <div class="w-12 h-12 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mr-4 shrink-0">
+                  <i class="ri-file-transfer-line text-secondary ri-lg"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold mb-2 text-gray-800">Right to Data Portability</h3>
+                  <p class="text-gray-700">You have the right to request that we transfer the data we have collected to another organization, or directly to you, under certain conditions.</p>
+                </div>
+              </div>
+              
+              <div class="flex">
+                <div class="w-12 h-12 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mr-4 shrink-0">
+                  <i class="ri-close-circle-line text-secondary ri-lg"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold mb-2 text-gray-800">Right to Object</h3>
+                  <p class="text-gray-700">You have the right to object to our processing of your personal information, under certain conditions.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-8 p-6 bg-white rounded-lg border border-gray-200">
+              <h3 class="text-lg font-semibold mb-4 text-gray-800">How to Exercise Your Rights</h3>
+              <p class="text-gray-700 mb-4">To exercise any of these rights, please contact us using the information provided in the "Contact Us" section below. We will respond to your request within the timeframe required by applicable law.</p>
+              <p class="text-gray-700">Please note that we may need to verify your identity before processing your request, and in some cases, we may be unable to comply with your request due to legal obligations or other legitimate reasons.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cookie Policy -->
+      <div id="cookies" class="mb-12">
+        <div class="flex items-center justify-between cursor-pointer policy-toggle">
+          <h2 class="text-2xl font-bold tech-font text-dark">Cookie Policy</h2>
+          <div class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full toggle-icon">
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+        </div>
+        <div class="policy-section mt-4">
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <p class="text-gray-700 mb-6">Our website uses cookies to enhance your browsing experience, analyze site traffic, and personalize content. Cookies are small text files that are stored on your device when you visit our website.</p>
+            
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Types of Cookies We Use</h3>
+            
+            <div class="space-y-4 mb-8">
+              <div class="bg-white p-4 rounded-lg border border-gray-100">
+                <h4 class="font-semibold text-gray-800 mb-2">Essential Cookies</h4>
+                <p class="text-gray-700">These cookies are necessary for the website to function properly and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in, or filling in forms.</p>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg border border-gray-100">
+                <h4 class="font-semibold text-gray-800 mb-2">Performance Cookies</h4>
+                <p class="text-gray-700">These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site.</p>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg border border-gray-100">
+                <h4 class="font-semibold text-gray-800 mb-2">Functional Cookies</h4>
+                <p class="text-gray-700">These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third-party providers whose services we have added to our pages.</p>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg border border-gray-100">
+                <h4 class="font-semibold text-gray-800 mb-2">Targeting Cookies</h4>
+                <p class="text-gray-700">These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant advertisements on other sites.</p>
+              </div>
+            </div>
+            
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Managing Cookies</h3>
+            <p class="text-gray-700 mb-4">Most web browsers allow you to control cookies through their settings preferences. However, if you limit the ability of websites to set cookies, you may impact your overall user experience. To find out more about cookies, including how to see what cookies have been set and how to manage and delete them, visit <a href="#" class="text-secondary hover:underline">www.aboutcookies.org</a> or <a href="#" class="text-secondary hover:underline">www.allaboutcookies.org</a>.</p>
+            
+            <div class="bg-dark text-white p-6 rounded-lg mt-6">
+              <h3 class="text-xl font-semibold mb-4">Cookie Preferences</h3>
+              <p class="text-gray-300 mb-6">You can set your cookie preferences by using the options below:</p>
+              
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="font-semibold">Essential Cookies</h4>
+                    <p class="text-gray-400 text-sm">Always active and necessary for the website to function</p>
+                  </div>
+                  <div class="relative">
+                    <input type="checkbox" id="essential" class="sr-only" checked disabled>
+                    <div class="w-12 h-6 bg-gray-700 rounded-full"></div>
+                    <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-secondary rounded-full"></div>
+                  </div>
+                </div>
+                
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="font-semibold">Performance Cookies</h4>
+                    <p class="text-gray-400 text-sm">Help us improve our website by collecting anonymous information</p>
+                  </div>
+                  <div class="relative">
+                    <input type="checkbox" id="performance" class="sr-only cookie-toggle">
+                    <div class="w-12 h-6 bg-gray-700 rounded-full toggle-bg"></div>
+                  </div>
+                </div>
+                
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="font-semibold">Functional Cookies</h4>
+                    <p class="text-gray-400 text-sm">Enable enhanced functionality and personalization</p>
+                  </div>
+                  <div class="relative">
+                    <input type="checkbox" id="functional" class="sr-only cookie-toggle">
+                    <div class="w-12 h-6 bg-gray-700 rounded-full toggle-bg"></div>
+                  </div>
+                </div>
+                
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="font-semibold">Targeting Cookies</h4>
+                    <p class="text-gray-400 text-sm">Allow us to deliver more relevant advertisements</p>
+                  </div>
+                  <div class="relative">
+                    <input type="checkbox" id="targeting" class="sr-only cookie-toggle">
+                    <div class="w-12 h-6 bg-gray-700 rounded-full toggle-bg"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-6 flex justify-end">
+                <button class="px-6 py-2 bg-secondary text-dark font-medium rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap">Save Preferences</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Information -->
+      <div id="contact" class="mb-12">
+        <div class="flex items-center justify-between cursor-pointer policy-toggle">
+          <h2 class="text-2xl font-bold tech-font text-dark">Contact Information</h2>
+          <div class="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full toggle-icon">
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+        </div>
+        <div class="policy-section mt-4">
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <p class="text-gray-700 mb-6">If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact our Data Protection Officer:</p>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 mb-8">
+              <div class="flex flex-col md:flex-row md:items-center mb-4">
+                <div class="w-12 h-12 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mb-4 md:mb-0 md:mr-4">
+                  <i class="ri-user-3-line text-secondary ri-lg"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-800">Data Protection Officer</h3>
+                  <p class="text-gray-700">PinaqTech, Inc.</p>
+                </div>
+              </div>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                <div class="flex items-start">
+                  <div class="w-5 h-5 flex items-center justify-center mt-1 mr-3">
+                    <i class="ri-map-pin-line text-secondary"></i>
+                  </div>
+                  <span class="text-gray-700">123 Security Ave, San Francisco, CA 94103, United States</span>
+                </div>
+                
+                <div class="flex items-center">
+                  <div class="w-5 h-5 flex items-center justify-center mr-3">
+                    <i class="ri-phone-line text-secondary"></i>
+                  </div>
+                  <span class="text-gray-700">+1 (555) 123-4567</span>
+                </div>
+                
+                <div class="flex items-center">
+                  <div class="w-5 h-5 flex items-center justify-center mr-3">
+                    <i class="ri-mail-line text-secondary"></i>
+                  </div>
+                  <span class="text-gray-700">privacy@pinaqtech.com</span>
+                </div>
+                
+                <div class="flex items-center">
+                  <div class="w-5 h-5 flex items-center justify-center mr-3">
+                    <i class="ri-global-line text-secondary"></i>
+                  </div>
+                  <span class="text-gray-700">www.pinaqtech.com/privacy</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-primary bg-opacity-10 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold mb-4 text-gray-800">Submit a Privacy Request</h3>
+              <p class="text-gray-700 mb-6">If you would like to submit a privacy-related request, please fill out the form below:</p>
+              
+              <form class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-secondary focus:border-transparent" placeholder="John Doe">
+                  </div>
+                  
+                  <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-secondary focus:border-transparent" placeholder="john.doe@example.com">
+                  </div>
+                </div>
+                
+                <div>
+                  <label for="request-type" class="block text-sm font-medium text-gray-700 mb-1">Request Type</label>
+                  <div class="relative">
+                    <select id="request-type" class="w-full px-4 py-2 border border-gray-300 rounded appearance-none focus:ring-2 focus:ring-secondary focus:border-transparent pr-8">
+                      <option value="" selected disabled>Select a request type</option>
+                      <option value="access">Access my data</option>
+                      <option value="rectify">Correct my data</option>
+                      <option value="delete">Delete my data</option>
+                      <option value="restrict">Restrict processing</option>
+                      <option value="portability">Data portability</option>
+                      <option value="object">Object to processing</option>
+                      <option value="other">Other request</option>
+                    </select>
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                      <i class="ri-arrow-down-s-line text-gray-400"></i>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                  <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-secondary focus:border-transparent" placeholder="Please provide details about your request..."></textarea>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="flex items-center h-5">
+                    <input id="consent" type="checkbox" class="sr-only">
+                    <div class="w-5 h-5 border border-gray-300 rounded flex items-center justify-center bg-transparent relative">
+                      <div class="hidden absolute inset-0 bg-secondary rounded"></div>
+                      <i class="ri-check-line text-white text-xs hidden"></i>
+                    </div>
+                  </div>
+                  <label for="consent" class="ml-3 text-sm text-gray-700">
+                    I confirm that the information provided is accurate and I understand that PinaqTech may need to verify my identity before processing my request.
+                  </label>
+                </div>
+                
+                <div>
+                  <button type="submit" class="px-6 py-3 bg-secondary text-dark font-medium rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap">Submit Request</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Information -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-6 tech-font text-dark">Additional Information</h2>
+        <div class="space-y-6">
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Changes to This Privacy Policy</h3>
+            <p class="text-gray-700">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+          </div>
+          
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Children's Privacy</h3>
+            <p class="text-gray-700">Our services are not intended for use by children under the age of 16. We do not knowingly collect personal information from children under 16. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we can take necessary actions.</p>
+          </div>
+          
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Third-Party Links</h3>
+            <p class="text-gray-700">Our website may contain links to other websites that are not operated by us. If you click on a third-party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Back to Top Button -->
+<div class="fixed bottom-6 right-6 z-40 back-to-top">
+  <button id="back-to-top" class="w-12 h-12 flex items-center justify-center rounded-full bg-secondary text-dark shadow-lg hover:bg-opacity-90 transition-colors">
+    <i class="ri-arrow-up-line ri-lg"></i>
+  </button>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-16 pb-8">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+      <div>
+        <a href="#" class="text-2xl font-['Pacifico'] text-white mb-6 inline-block">logo</a>
+        <p class="text-gray-400 mb-6">Protecting businesses with AI-driven security solutions since 2018.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-gray-800 transition-colors">
+            <i class="ri-twitter-x-line"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-gray-800 transition-colors">
+            <i class="ri-linkedin-line"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-gray-800 transition-colors">
+            <i class="ri-facebook-line"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-gray-800 transition-colors">
+            <i class="ri-github-line"></i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-6 tech-font">Products</h3>
+        <ul class="space-y-4">
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Threat Detection</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cloud Security</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Identity Management</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Data Protection</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Compliance Tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-6 tech-font">Resources</h3>
+        <ul class="space-y-4">
+          <li><a href="https://readdy.ai/home/07371c7c-82b9-4af1-831e-2d88c3f1d6bb/a6b67093-e31d-4cf8-99ac-4331d9108baf" data-readdy="true" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Whitepapers</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Case Studies</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Webinars</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-6 tech-font">Legal</h3>
+        <ul class="space-y-4">
+          <li><a href="https://readdy.ai/home/07371c7c-82b9-4af1-831e-2d88c3f1d6bb/1d92c513-8c19-40b3-a146-91be7a923bf6" data-readdy="true" class="text-white hover:text-secondary transition-colors">Privacy Policy</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">GDPR Compliance</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition-colors">CCPA Compliance</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-500 mb-4 md:mb-0">© 2025 PinaqTech. All rights reserved.</p>
+      <div class="flex space-x-6">
+        <a href="https://readdy.ai/home/07371c7c-82b9-4af1-831e-2d88c3f1d6bb/1d92c513-8c19-40b3-a146-91be7a923bf6" data-readdy="true" class="text-white hover:text-secondary transition-colors">Privacy Policy</a>
+        <a href="#" class="text-gray-500 hover:text-white transition-colors">Terms of Service</a>
+        <a href="#" class="text-gray-500 hover:text-white transition-colors">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Toggle policy sections
+  const toggleButtons = document.querySelectorAll('.policy-toggle');
+  
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const section = this.nextElementSibling;
+      section.classList.toggle('expanded');
+      
+      const icon = this.querySelector('.toggle-icon');
+      icon.classList.toggle('expanded');
+    });
+  });
+  
+  // Back to top button
+  const backToTopButton = document.getElementById('back-to-top');
+  const backToTopContainer = document.querySelector('.back-to-top');
+  
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+      backToTopContainer.classList.add('visible');
+    } else {
+      backToTopContainer.classList.remove('visible');
+    }
+  });
+  
+  backToTopButton.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+  
+  // Custom checkbox implementation
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]:not(.cookie-toggle)');
+  
+  checkboxes.forEach(checkbox => {
+    const checkboxDiv = checkbox.nextElementSibling;
+    const checkboxBg = checkboxDiv.querySelector('div');
+    const checkboxIcon = checkboxDiv.querySelector('i');
+    
+    if (checkboxDiv) {
+      checkboxDiv.addEventListener('click', function() {
+        if (!checkbox.disabled) {
+          checkbox.checked = !checkbox.checked;
+          
+          if (checkbox.checked) {
+            checkboxBg.classList.remove('hidden');
+            checkboxIcon.classList.remove('hidden');
+          } else {
+            checkboxBg.classList.add('hidden');
+            checkboxIcon.classList.add('hidden');
+          }
+        }
+      });
+    }
+  });
+  
+  // Cookie toggle switches
+  const cookieToggles = document.querySelectorAll('.cookie-toggle');
+  
+  cookieToggles.forEach(toggle => {
+    toggle.addEventListener('change', function() {
+      // Implementation for cookie toggle functionality
+    });
+  });
+  
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 100,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+/* Base Styles */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background-color: rgba(10, 26, 53, 0.8);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+:global(.dark) .navbar {
+  background-color: rgba(26, 26, 26, 0.8);
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  position: relative;
+}
+
+/* Logo Styles */
+.logoContainer {
+  z-index: 60;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Navigation Links */
+.navLinks {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(10, 26, 53, 0.95);
+  padding: 1.5rem;
+  gap: 1.5rem;
+  z-index: 55;
+  transition: all 0.3s ease;
+  transform: translateY(-150%);
+  opacity: 0;
+}
+
+:global(.dark) .navLinks {
+  /* background-color: rgba(26, 26, 26, 0.15); */
+}
+
+.navLink {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navLink:hover {
+  color: #00F5FF;
+}
+
+/* Nav Actions */
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 60;
+}
+
+/* Dark Mode Toggle */
+.darkModeToggle {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.toggleLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggleContainer {
+  position: relative;
+}
+
+.toggleInput {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggleBg {
+  width: 44px;
+  height: 24px;
+  background-color: #374151;
+  border-radius: 9999px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.toggleBg::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.toggleInput:checked + .toggleBg::after {
+  transform: translateX(20px);
+}
+
+.toggleInput:checked + .toggleBg {
+  background-color: #00F5FF;
+}
+
+.toggleText {
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  color: white;
+  display: none;
+}
+/* Theme Toggle Styles */
+.toggleButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-color);
+}
+
+.toggleContainer {
+  position: relative;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: var(--toggle-bg-color, #e2e8f0);
+  transition: background-color 0.3s ease;
+}
+
+.dark .toggleContainer {
+  background-color: var(--toggle-bg-dark-color, #4b5563);
+}
+
+.toggleHandle {
+  position: absolute;
+  top: 0.15rem;
+  left: 0.15rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: var(--toggle-handle-color, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.toggleHandle.dark {
+  transform: translateX(1.5rem);
+  background-color: var(--toggle-handle-dark-color, #1e293b);
+}
+
+.themeIcon {
+  font-size: 0.8rem;
+  color: var(--toggle-icon-color, #4a5568);
+}
+
+.dark .themeIcon {
+  color: var(--toggle-icon-dark-color, #e2e8f0);
+}
+
+.toggleText {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+/* Authentication Buttons */
+.loginButton,
+.logoutButton {
+  padding: 0.5rem 1rem;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  transition: all 0.3s;
+  font-size: 0.875rem;
+  background: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.loginButton:hover,
+.logoutButton:hover {
+  background-color: white;
+  color: #0A1A35;
+}
+
+.ctaButton {
+  padding: 0.5rem 1rem;
+  background-color: #00F5FF;
+  color: #0A1A35;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ctaButton:hover {
+  background-color: rgba(0, 245, 255, 0.9);
+  box-shadow: 0 0 15px rgba(0, 245, 255, 0.5);
+}
+
+.profileLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 0.875rem;
+}
+
+.profileLink:hover {
+  color: #00F5FF;
+}
+
+.profileIcon {
+  font-size: 1.25rem;
+}
+
+/* Mobile Menu Button */
+.mobileMenuButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 60;
+  margin-left: 0.5rem;
+}
+
+.menuIcon {
+  font-size: 1.75rem;
+  transition: transform 0.3s;
+}
+
+/* Active Mobile Menu State */
+.mobileMenuActive .navLinks {
+  display: flex;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.mobileMenuActive .menuIcon {
+  transform: rotate(90deg);
+}
+/* Profile Card Positioning */
+.profileCardContainer {
+  position: absolute;
+  top: 100%;
+  right: 1rem;
+  margin-top: 0.5rem;
+  z-index: 100;
+}
+
+/* Clickable Profile Area */
+.profileLink {
+  cursor: pointer;
+}
+/* Tablet Styles (640px and up) */
+@media (min-width: 640px) {
+  .container {
+    max-width: 80%;
+  }
+  
+  .toggleText {
+    display: block;
+  }
+  
+  .loginButton,
+  .logoutButton {
+    padding: 0.6rem 1.25rem;
+    display: none;
+    font-size: 0.9375rem;
+  }
+  
+  .ctaButton {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.9375rem;
+  }
+}
+
+/* Desktop Styles (1024px and up) */
+@media (min-width: 1024px) {
+  .navContent {
+    height: 80px;
+  }
+  
+  .navLinks {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background: transparent;
+    padding: 0;
+    transform: none;
+    opacity: 1;
+    gap: 2rem;
+  }
+  
+  .navLink {
+    padding: 0;
+    border-bottom: none;
+    font-size: 1rem;
+  }
+  
+  .mobileMenuButton {
+    display: none;
+  }
+  
+  .navActions {
+    gap: 1.25rem;
+  }
+  
+  .profileLink {
+    font-size: 1rem;
+  }
+  
+  .loginButton,
+  .logoutButton,
+  .ctaButton {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Large Desktop Styles (1280px and up) */
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 2rem;
+  }
+  
+  .navLinks {
+    gap: 2.5rem;
+  }
+  
+  .navActions {
+    gap: 1.5rem;
+  }
+}

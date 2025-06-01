@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PinaqTech - Security Products</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#FDCD22',secondary:'#00F5FF',dark:'#0A1A35'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+.tech-font {
+    font-family: 'JetBrains Mono', monospace;
+}
+.product-hero-section {
+    background-image: linear-gradient(to right, rgba(10, 26, 53, 0.95), rgba(10, 26, 53, 0.8)), url('https://readdy.ai/api/search-image?query=futuristic%2520digital%2520security%2520interface%2520with%2520glowing%2520blue%2520elements%252C%2520abstract%2520technology%2520background%2520with%2520shield%2520symbols%2520and%2520data%2520protection%2520visualization%252C%2520dark%2520blue%2520gradient%2520with%2520network%2520connections%252C%2520professional%2520cybersecurity%2520concept%2520for%2520product%2520showcase&width=1600&height=600&seq=10&orientation=landscape');
+    background-size: cover;
+    background-position: center;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 245, 255, 0.1);
+}
+.glow-button:hover {
+    box-shadow: 0 0 15px rgba(0, 245, 255, 0.5);
+}
+input:focus {
+    outline: none;
+}
+.toggle-bg:after {
+    content: '';
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+input:checked + .toggle-bg:after {
+    transform: translateX(1.5rem);
+}
+input:checked + .toggle-bg {
+    background-color: #00F5FF;
+}
+.glass-effect {
+    backdrop-filter: blur(10px);
+    background-color: rgba(10, 26, 53, 0.8);
+}
+.tab-active {
+    background-color: #00F5FF;
+    color: #0A1A35;
+}
+.pricing-toggle-bg:after {
+    content: '';
+    position: absolute;
+    top: 0.15rem;
+    left: 0.15rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+input:checked + .pricing-toggle-bg:after {
+    transform: translateX(2rem);
+}
+input:checked + .pricing-toggle-bg {
+    background-color: #00F5FF;
+}
+.feature-check {
+    color: #00F5FF;
+}
+.pricing-card {
+    transition: all 0.3s ease;
+}
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.pricing-card.popular {
+    border-color: #00F5FF;
+    box-shadow: 0 10px 25px -5px rgba(0, 245, 255, 0.2);
+}
+.spec-row:nth-child(odd) {
+    background-color: rgba(10, 26, 53, 0.03);
+}
+body.dark-mode .bg-white {
+    background-color: #1a1a1a;
+}
+body.dark-mode .bg-gray-50 {
+    background-color: #262626;
+}
+body.dark-mode .text-gray-600,
+body.dark-mode .text-gray-700,
+body.dark-mode .text-gray-800 {
+    color: #e5e5e5;
+}
+body.dark-mode .border-gray-200 {
+    border-color: #404040;
+}
+body.dark-mode .product-card {
+    background-color: #262626;
+}
+body.dark-mode .spec-row:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+</style>
+</head>
+<body class="bg-white text-gray-800 min-h-screen">
+<!-- Header Navigation -->
+<header class="fixed w-full z-50 glass-effect">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="https://readdy.ai/home/07371c7c-82b9-4af1-831e-2d88c3f1d6bb/1d92c513-8c19-40b3-a146-91be7a923bf6" data-readdy="true" class="text-2xl font-['Pacifico'] text-white">logo</a>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-white hover:text-secondary transition-colors">Services</a>
+                <a href="https://readdy.ai/home/07371c7c-82b9-4af1-831e-2d88c3f1d6bb/1d92c513-8c19-40b3-a146-91be7a923bf6" data-readdy="true" class="text-secondary hover:text-secondary transition-colors">Products</a>
+                <a href="#" class="text-white hover:text-secondary transition-colors">Solutions</a>
+                <a href="#" class="text-white hover:text-secondary transition-colors">Resources</a>
+                <a href="#" class="text-white hover:text-secondary transition-colors">About Us</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center">
+                    <label for="toggle" class="flex items-center cursor-pointer">
+                        <div class="relative">
+                            <input type="checkbox" id="toggle" class="sr-only">
+                            <div class="toggle-bg w-12 h-6 bg-gray-700 rounded-full"></div>
+                        </div>
+                        <span class="ml-2 text-sm text-white">Dark Mode</span>
+                    </label>
+                </div>
+                <a href="#" class="hidden md:inline-block px-4 py-2 text-white border border-white rounded-button hover:bg-white hover:text-dark transition-colors whitespace-nowrap">Login</a>
+                <a href="#" class="px-4 py-2 bg-secondary text-dark font-medium rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap glow-button">Get Started</a>
+                <button class="md:hidden w-10 h-10 flex items-center justify-center text-white">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Product Hero Section -->
+<section class="product-hero-section pt-28 pb-16">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 tech-font text-white">Security Products</h1>
+            <p class="text-xl text-gray-300 mb-10">Comprehensive security solutions powered by AI to protect your business from evolving threats</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#threat-detection" class="px-5 py-2 bg-white bg-opacity-10 text-white rounded-button hover:bg-secondary hover:text-dark transition-colors whitespace-nowrap">Threat Detection</a>
+                <a href="#cloud-security" class="px-5 py-2 bg-white bg-opacity-10 text-white rounded-button hover:bg-secondary hover:text-dark transition-colors whitespace-nowrap">Cloud Security</a>
+                <a href="#identity-management" class="px-5 py-2 bg-white bg-opacity-10 text-white rounded-button hover:bg-secondary hover:text-dark transition-colors whitespace-nowrap">Identity Management</a>
+                <a href="#data-protection" class="px-5 py-2 bg-white bg-opacity-10 text-white rounded-button hover:bg-secondary hover:text-dark transition-colors whitespace-nowrap">Data Protection</a>
+                <a href="#compliance-tools" class="px-5 py-2 bg-white bg-opacity-10 text-white rounded-button hover:bg-secondary hover:text-dark transition-colors whitespace-nowrap">Compliance Tools</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Category Section: Threat Detection -->
+<section id="threat-detection" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-start gap-16">
+            <div class="w-full md:w-1/3">
+                <div class="sticky top-32">
+                    <div class="w-16 h-16 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mb-6">
+                        <i class="ri-shield-keyhole-line text-secondary ri-2x"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4 tech-font text-dark">Threat Detection</h2>
+                    <p class="text-gray-600 mb-8">Advanced AI-powered solutions that identify and neutralize threats before they impact your business.</p>
+                    <a href="#" class="inline-flex items-center px-6 py-3 bg-secondary text-dark font-medium rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap glow-button">
+                        <span>Request Demo</span>
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full md:w-2/3">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Product 1 -->
+                    <div class="product-card bg-white p-8 rounded-lg border border-gray-200 shadow-sm transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-3 tech-font">PinaqShield</h3>
+                        <p class="text-gray-600 mb-6">Real-time threat detection and response platform powered by machine learning algorithms.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-2 text-dark">Key Benefits:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Reduces detection time by 95%</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Zero-day threat protection</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Automated incident response</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-secondary flex items-center font-medium hover:underline">
+                                <span>Learn more</span>
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                            <a href="#pinaqshield-pricing" class="text-dark flex items-center font-medium hover:underline">
+                                <span>Pricing</span>
+                                <i class="ri-price-tag-3-line ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card bg-white p-8 rounded-lg border border-gray-200 shadow-sm transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-3 tech-font">ThreatHunter Pro</h3>
+                        <p class="text-gray-600 mb-6">Proactive threat hunting solution that searches for hidden threats across your network.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-2 text-dark">Key Benefits:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Continuous threat hunting</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Behavioral analysis</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Forensic investigation tools</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-secondary flex items-center font-medium hover:underline">
+                                <span>Learn more</span>
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                            <a href="#threathunter-pricing" class="text-dark flex items-center font-medium hover:underline">
+                                <span>Pricing</span>
+                                <i class="ri-price-tag-3-line ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technical Specifications -->
+                <div class="mt-12 p-8 bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 tech-font">Technical Specifications</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">Feature</th>
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">PinaqShield</th>
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">ThreatHunter Pro</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Detection Methods</td>
+                                    <td class="py-3 px-4 text-gray-600">ML, Behavioral, Signature</td>
+                                    <td class="py-3 px-4 text-gray-600">Behavioral, Heuristic</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Response Time</td>
+                                    <td class="py-3 px-4 text-gray-600">< 5 seconds</td>
+                                    <td class="py-3 px-4 text-gray-600">< 30 seconds</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Integrations</td>
+                                    <td class="py-3 px-4 text-gray-600">SIEM, SOAR, EDR, 50+ tools</td>
+                                    <td class="py-3 px-4 text-gray-600">SIEM, EDR, 30+ tools</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Deployment</td>
+                                    <td class="py-3 px-4 text-gray-600">Cloud, On-premise, Hybrid</td>
+                                    <td class="py-3 px-4 text-gray-600">Cloud, On-premise</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Threat Intelligence</td>
+                                    <td class="py-3 px-4 text-gray-600">Global + Custom</td>
+                                    <td class="py-3 px-4 text-gray-600">Global</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Category Section: Cloud Security -->
+<section id="cloud-security" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-start gap-16">
+            <div class="w-full md:w-1/3">
+                <div class="sticky top-32">
+                    <div class="w-16 h-16 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mb-6">
+                        <i class="ri-cloud-line text-secondary ri-2x"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4 tech-font text-dark">Cloud Security</h2>
+                    <p class="text-gray-600 mb-8">Comprehensive security solutions for cloud environments that ensure data protection and compliance.</p>
+                    <a href="#" class="inline-flex items-center px-6 py-3 bg-secondary text-dark font-medium rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap glow-button">
+                        <span>Request Demo</span>
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full md:w-2/3">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Product 1 -->
+                    <div class="product-card bg-white p-8 rounded-lg border border-gray-200 shadow-sm transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-3 tech-font">CloudGuard</h3>
+                        <p class="text-gray-600 mb-6">Multi-cloud security platform that provides visibility and protection across AWS, Azure, and GCP.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-2 text-dark">Key Benefits:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Unified multi-cloud management</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Automated security posture</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Real-time threat detection</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-secondary flex items-center font-medium hover:underline">
+                                <span>Learn more</span>
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                            <a href="#cloudguard-pricing" class="text-dark flex items-center font-medium hover:underline">
+                                <span>Pricing</span>
+                                <i class="ri-price-tag-3-line ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card bg-white p-8 rounded-lg border border-gray-200 shadow-sm transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-3 tech-font">ContainerShield</h3>
+                        <p class="text-gray-600 mb-6">Security solution for containerized applications and Kubernetes environments.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-2 text-dark">Key Benefits:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Runtime protection</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Image scanning</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Kubernetes security policies</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-secondary flex items-center font-medium hover:underline">
+                                <span>Learn more</span>
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                            <a href="#containershield-pricing" class="text-dark flex items-center font-medium hover:underline">
+                                <span>Pricing</span>
+                                <i class="ri-price-tag-3-line ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technical Specifications -->
+                <div class="mt-12 p-8 bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 tech-font">Technical Specifications</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">Feature</th>
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">CloudGuard</th>
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">ContainerShield</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Supported Platforms</td>
+                                    <td class="py-3 px-4 text-gray-600">AWS, Azure, GCP, Oracle</td>
+                                    <td class="py-3 px-4 text-gray-600">Kubernetes, Docker, OpenShift</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Compliance Standards</td>
+                                    <td class="py-3 px-4 text-gray-600">GDPR, HIPAA, PCI DSS, SOC 2</td>
+                                    <td class="py-3 px-4 text-gray-600">CIS Benchmarks, NIST</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Automation</td>
+                                    <td class="py-3 px-4 text-gray-600">IaC scanning, Auto-remediation</td>
+                                    <td class="py-3 px-4 text-gray-600">CI/CD integration, Policy as code</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Monitoring</td>
+                                    <td class="py-3 px-4 text-gray-600">Real-time, Anomaly detection</td>
+                                    <td class="py-3 px-4 text-gray-600">Runtime, Network traffic</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">API Security</td>
+                                    <td class="py-3 px-4 text-gray-600">Advanced</td>
+                                    <td class="py-3 px-4 text-gray-600">Basic</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Category Section: Identity Management -->
+<section id="identity-management" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-start gap-16">
+            <div class="w-full md:w-1/3">
+                <div class="sticky top-32">
+                    <div class="w-16 h-16 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mb-6">
+                        <i class="ri-user-settings-line text-secondary ri-2x"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4 tech-font text-dark">Identity Management</h2>
+                    <p class="text-gray-600 mb-8">Secure and manage user identities across your organization with advanced authentication and access control.</p>
+                    <a href="#" class="inline-flex items-center px-6 py-3 bg-secondary text-dark font-medium rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap glow-button">
+                        <span>Request Demo</span>
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full md:w-2/3">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Product 1 -->
+                    <div class="product-card bg-white p-8 rounded-lg border border-gray-200 shadow-sm transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-3 tech-font">IdentityOne</h3>
+                        <p class="text-gray-600 mb-6">Comprehensive identity and access management platform with single sign-on and MFA capabilities.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-2 text-dark">Key Benefits:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Centralized identity management</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Passwordless authentication</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Adaptive MFA</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-secondary flex items-center font-medium hover:underline">
+                                <span>Learn more</span>
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                            <a href="#identityone-pricing" class="text-dark flex items-center font-medium hover:underline">
+                                <span>Pricing</span>
+                                <i class="ri-price-tag-3-line ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card bg-white p-8 rounded-lg border border-gray-200 shadow-sm transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-3 tech-font">PrivilegeGuard</h3>
+                        <p class="text-gray-600 mb-6">Privileged access management solution that secures, controls, and monitors privileged accounts.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-2 text-dark">Key Benefits:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Just-in-time access</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Session recording</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Credential vaulting</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-secondary flex items-center font-medium hover:underline">
+                                <span>Learn more</span>
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                            <a href="#privilegeguard-pricing" class="text-dark flex items-center font-medium hover:underline">
+                                <span>Pricing</span>
+                                <i class="ri-price-tag-3-line ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technical Specifications -->
+                <div class="mt-12 p-8 bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 tech-font">Technical Specifications</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">Feature</th>
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">IdentityOne</th>
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">PrivilegeGuard</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Authentication Methods</td>
+                                    <td class="py-3 px-4 text-gray-600">FIDO2, Biometric, OTP, Push</td>
+                                    <td class="py-3 px-4 text-gray-600">MFA, Smart Cards, Biometric</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Directory Integration</td>
+                                    <td class="py-3 px-4 text-gray-600">AD, LDAP, Azure AD, Okta</td>
+                                    <td class="py-3 px-4 text-gray-600">AD, LDAP, Cloud Directories</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Access Controls</td>
+                                    <td class="py-3 px-4 text-gray-600">Role-based, Attribute-based</td>
+                                    <td class="py-3 px-4 text-gray-600">Just-in-time, Workflow approval</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Monitoring</td>
+                                    <td class="py-3 px-4 text-gray-600">User behavior analytics</td>
+                                    <td class="py-3 px-4 text-gray-600">Session recording, Keystroke logging</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Compliance</td>
+                                    <td class="py-3 px-4 text-gray-600">SOX, GDPR, HIPAA</td>
+                                    <td class="py-3 px-4 text-gray-600">PCI DSS, NIST, ISO 27001</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Category Section: Data Protection -->
+<section id="data-protection" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-start gap-16">
+            <div class="w-full md:w-1/3">
+                <div class="sticky top-32">
+                    <div class="w-16 h-16 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mb-6">
+                        <i class="ri-database-2-line text-secondary ri-2x"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4 tech-font text-dark">Data Protection</h2>
+                    <p class="text-gray-600 mb-8">Safeguard your sensitive data with encryption, access controls, and data loss prevention technologies.</p>
+                    <a href="#" class="inline-flex items-center px-6 py-3 bg-secondary text-dark font-medium rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap glow-button">
+                        <span>Request Demo</span>
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full md:w-2/3">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Product 1 -->
+                    <div class="product-card bg-white p-8 rounded-lg border border-gray-200 shadow-sm transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-3 tech-font">DataVault</h3>
+                        <p class="text-gray-600 mb-6">Enterprise-grade data encryption and key management solution for structured and unstructured data.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-2 text-dark">Key Benefits:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">End-to-end encryption</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Centralized key management</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Transparent data encryption</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-secondary flex items-center font-medium hover:underline">
+                                <span>Learn more</span>
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                            <a href="#datavault-pricing" class="text-dark flex items-center font-medium hover:underline">
+                                <span>Pricing</span>
+                                <i class="ri-price-tag-3-line ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card bg-white p-8 rounded-lg border border-gray-200 shadow-sm transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-3 tech-font">DataSentry</h3>
+                        <p class="text-gray-600 mb-6">Data loss prevention solution that identifies, monitors, and protects sensitive data across your organization.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-2 text-dark">Key Benefits:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Content inspection</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Automated policy enforcement</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Endpoint protection</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-secondary flex items-center font-medium hover:underline">
+                                <span>Learn more</span>
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                            <a href="#datasentry-pricing" class="text-dark flex items-center font-medium hover:underline">
+                                <span>Pricing</span>
+                                <i class="ri-price-tag-3-line ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technical Specifications -->
+                <div class="mt-12 p-8 bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 tech-font">Technical Specifications</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">Feature</th>
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">DataVault</th>
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">DataSentry</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Encryption Algorithms</td>
+                                    <td class="py-3 px-4 text-gray-600">AES-256, RSA-4096, ECC</td>
+                                    <td class="py-3 px-4 text-gray-600">AES-256</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Data Coverage</td>
+                                    <td class="py-3 px-4 text-gray-600">At rest, In transit, In use</td>
+                                    <td class="py-3 px-4 text-gray-600">In use, In motion</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Detection Methods</td>
+                                    <td class="py-3 px-4 text-gray-600">Key rotation, Access logs</td>
+                                    <td class="py-3 px-4 text-gray-600">Pattern matching, ML classification</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Integration</td>
+                                    <td class="py-3 px-4 text-gray-600">HSM, Cloud KMS, KMIP</td>
+                                    <td class="py-3 px-4 text-gray-600">Email, Cloud storage, Endpoints</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Compliance</td>
+                                    <td class="py-3 px-4 text-gray-600">FIPS 140-2, GDPR, HIPAA</td>
+                                    <td class="py-3 px-4 text-gray-600">PCI DSS, GDPR, CCPA</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Category Section: Compliance Tools -->
+<section id="compliance-tools" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-start gap-16">
+            <div class="w-full md:w-1/3">
+                <div class="sticky top-32">
+                    <div class="w-16 h-16 flex items-center justify-center bg-dark bg-opacity-5 rounded-full mb-6">
+                        <i class="ri-file-search-line text-secondary ri-2x"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4 tech-font text-dark">Compliance Tools</h2>
+                    <p class="text-gray-600 mb-8">Streamline regulatory compliance with automated assessment, monitoring, and reporting tools.</p>
+                    <a href="#" class="inline-flex items-center px-6 py-3 bg-secondary text-dark font-medium rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap glow-button">
+                        <span>Request Demo</span>
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full md:w-2/3">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Product 1 -->
+                    <div class="product-card bg-white p-8 rounded-lg border border-gray-200 shadow-sm transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-3 tech-font">ComplianceIQ</h3>
+                        <p class="text-gray-600 mb-6">Comprehensive compliance management platform that automates assessment, remediation, and reporting.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-2 text-dark">Key Benefits:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Continuous compliance monitoring</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Automated evidence collection</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Customizable dashboards</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-secondary flex items-center font-medium hover:underline">
+                                <span>Learn more</span>
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                            <a href="#complianceiq-pricing" class="text-dark flex items-center font-medium hover:underline">
+                                <span>Pricing</span>
+                                <i class="ri-price-tag-3-line ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card bg-white p-8 rounded-lg border border-gray-200 shadow-sm transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-3 tech-font">AuditPro</h3>
+                        <p class="text-gray-600 mb-6">Automated security auditing solution that identifies vulnerabilities and compliance gaps in real-time.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-2 text-dark">Key Benefits:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Continuous security auditing</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Risk-based prioritization</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+                                    <span class="text-gray-600">Remediation guidance</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-secondary flex items-center font-medium hover:underline">
+                                <span>Learn more</span>
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                            <a href="#auditpro-pricing" class="text-dark flex items-center font-medium hover:underline">
+                                <span>Pricing</span>
+                                <i class="ri-price-tag-3-line ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technical Specifications -->
+                <div class="mt-12 p-8 bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 tech-font">Technical Specifications</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">Feature</th>
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">ComplianceIQ</th>
+                                    <th class="text-left py-3 px-4 font-semibold text-dark">AuditPro</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Supported Frameworks</td>
+                                    <td class="py-3 px-4 text-gray-600">ISO 27001, GDPR, HIPAA, SOC 2</td>
+                                    <td class="py-3 px-4 text-gray-600">CIS, NIST, PCI DSS</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Assessment Methods</td>
+                                    <td class="py-3 px-4 text-gray-600">Questionnaires, Automated scans</td>
+                                    <td class="py-3 px-4 text-gray-600">Vulnerability scanning, Config analysis</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Reporting</td>
+                                    <td class="py-3 px-4 text-gray-600">Customizable, Executive summaries</td>
+                                    <td class="py-3 px-4 text-gray-600">Detailed findings, Remediation plans</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Integration</td>
+                                    <td class="py-3 px-4 text-gray-600">GRC tools, SIEM, Ticketing systems</td>
+                                    <td class="py-3 px-4 text-gray-600">DevOps tools, CI/CD pipelines</td>
+                                </tr>
+                                <tr class="spec-row">
+                                    <td class="py-3 px-4 text-gray-700">Automation</td>
+                                    <td class="py-3 px-4 text-gray-600">Evidence collection, Notifications</td>
+                                    <td class="py-3 px-4 text-gray-600">Continuous monitoring, Auto-remediation</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pinaqshield-pricing" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 tech-font text-dark">Transparent Pricing</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Choose the right plan for your organization's security needs</p>
+            
+            <div class="flex items-center justify-center mt-8">
+                <span class="text-gray-600 mr-3">Monthly</span>
+                <label class="relative inline-block w-16 h-8 cursor-pointer">
+                    <input type="checkbox" id="pricing-toggle" class="sr-only">
+                    <div class="pricing-toggle-bg w-16 h-8 bg-gray-300 rounded-full"></div>
+                </label>
+                <span class="text-gray-600 ml-3">Annual <span class="text-secondary font-medium">Save 20%</span></span>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Basic Plan -->
+            <div class="pricing-card bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+                <div class="p-8">
+                    <h3 class="text-xl font-bold mb-4 tech-font">Starter</h3>
+                    <div class="flex items-end mb-6">
+                        <span class="text-4xl font-bold" id="starter-price">$499</span>
+                        <span class="text-gray-600 ml-2 mb-1">/month</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">Essential security for small businesses and startups</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">Up to 100 users</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">Basic threat detection</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">Cloud security essentials</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">Standard support (8/5)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-close-line text-gray-400 mt-1 mr-2"></i>
+                            <span class="text-gray-400">Advanced analytics</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-close-line text-gray-400 mt-1 mr-2"></i>
+                            <span class="text-gray-400">Custom integrations</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full px-6 py-3 text-center border border-secondary text-secondary font-medium rounded-button hover:bg-secondary hover:text-dark transition-colors whitespace-nowrap">Get Started</a>
+                </div>
+            </div>
+            
+            <!-- Professional Plan -->
+            <div class="pricing-card popular bg-white rounded-lg border-2 shadow-md overflow-hidden relative">
+                <div class="absolute top-0 right-0">
+                    <div class="bg-secondary text-dark px-4 py-1 font-medium text-sm">Popular</div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-xl font-bold mb-4 tech-font">Professional</h3>
+                    <div class="flex items-end mb-6">
+                        <span class="text-4xl font-bold" id="professional-price">$1,299</span>
+                        <span class="text-gray-600 ml-2 mb-1">/month</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">Advanced security for growing organizations</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">Up to 500 users</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">Advanced threat detection</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">Cloud security & compliance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">Priority support (12/7)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">Advanced analytics</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-close-line text-gray-400 mt-1 mr-2"></i>
+                            <span class="text-gray-400">Custom integrations</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full px-6 py-3 text-center bg-secondary text-dark font-medium rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap glow-button">Get Started</a>
+                </div>
+            </div>
+            
+            <!-- Enterprise Plan -->
+            <div class="pricing-card bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+                <div class="p-8">
+                    <h3 class="text-xl font-bold mb-4 tech-font">Enterprise</h3>
+                    <div class="flex items-end mb-6">
+                        <span class="text-4xl font-bold" id="enterprise-price">$2,999</span>
+                        <span class="text-gray-600 ml-2 mb-1">/month</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">Complete security for large enterprises</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">Unlimited users</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">AI-driven threat intelligence</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">Full security suite access</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">24/7 dedicated support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">Advanced analytics & reporting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line feature-check mt-1 mr-2"></i>
+                            <span class="text-gray-600">Custom integrations</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full px-6 py-3 text-center border border-secondary text-secondary font-medium rounded-button hover:bg-secondary hover:text-dark transition-colors whitespace-nowrap">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-12 text-center">
+            <p class="text-gray-600 mb-4">Need a custom solution? We can tailor our products to your specific requirements.</p>
+            <a href="#" class="inline-flex items-center px-6 py-3 bg-dark text-white font-medium rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap">
+                <span>Request Custom Quote</span>
+                <i class="ri-arrow-right-line ml-2"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 tech-font text-dark">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600">Find answers to common questions about our security products</p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 focus:outline-none text-left">
+                        <h3 class="text-lg font-semibold tech-font">How do your AI-driven security solutions work?</h3>
+                        <i class="ri-arrow-down-s-line text-secondary ri-lg faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-600">Our AI-driven security solutions use machine learning algorithms to analyze patterns and behaviors across your network, applications, and systems. By establishing baselines of normal activity, our technology can quickly identify anomalies that may indicate security threats. The system continuously learns and improves its detection capabilities, adapting to new threats and reducing false positives over time.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 focus:outline-none text-left">
+                        <h3 class="text-lg font-semibold tech-font">Can your products integrate with our existing security infrastructure?</h3>
+                        <i class="ri-arrow-down-s-line text-secondary ri-lg faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-600">Yes, our security products are designed to integrate seamlessly with your existing security infrastructure. We support integration with popular SIEM solutions, identity providers, cloud platforms, and other security tools through standard APIs and connectors. Our professional services team can assist with custom integrations for specialized or legacy systems to ensure a comprehensive security posture.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 focus:outline-none text-left">
+                        <h3 class="text-lg font-semibold tech-font">What compliance standards do your products support?</h3>
+                        <i class="ri-arrow-down-s-line text-secondary ri-lg faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-600">Our products support a wide range of compliance standards including GDPR, HIPAA, PCI DSS, SOC 2, ISO 27001, NIST Cybersecurity Framework, and more. Our compliance tools automate evidence collection, control mapping, and reporting to streamline the compliance process. Additionally, our solutions themselves are built with security and compliance in mind, helping you maintain a strong security posture while meeting regulatory requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 focus:outline-none text-left">
+                        <h3 class="text-lg font-semibold tech-font">How quickly can we deploy your security solutions?</h3>
+                        <i class="ri-arrow-down-s-line text-secondary ri-lg faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-600">Deployment timelines vary based on the products selected and the complexity of your environment. Cloud-based solutions can typically be deployed within days, while more comprehensive enterprise deployments may take 2-4 weeks. Our implementation team works closely with your IT and security teams to ensure a smooth deployment process, including configuration, integration, and knowledge transfer. We also offer expedited deployment options for organizations with urgent security needs.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 focus:outline-none text-left">
+                        <h3 class="text-lg font-semibold tech-font">What kind of support do you provide after implementation?</h3>
+                        <i class="ri-arrow-down-s-line text-secondary ri-lg faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-600">We provide tiered support options based on your plan. All customers receive access to our knowledge base, documentation, and community forums. Standard support includes email and ticket-based assistance during business hours. Professional plans include priority support with faster response times and extended hours. Enterprise customers receive 24/7 dedicated support with a named account manager and regular security reviews. We also offer optional managed services for organizations that prefer to outsource security operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-dark text-white">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 tech-font">Ready to secure your business?</h2>
+            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">Get a personalized demo and see how our security products can protect your organization from evolving threats.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="px-8 py-4 bg-secondary text-dark font-medium rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap glow-button flex items-center justify-center">
+                    <span>Schedule a Demo</span>
+                    <i class="ri-arrow-right-line ml-2"></i>
+                </a>
+                <a href="#" class="px-8 py-4 border border-white text-white rounded-button hover:bg-white hover:text-dark transition-colors whitespace-nowrap flex items-center justify-center">
+                    <span>Contact Sales</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-16 pb-8">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div>
+                <a href="https://readdy.ai/home/07371c7c-82b9-4af1-831e-2d88c3f1d6bb/1d92c513-8c19-40b3-a146-91be7a923bf6" data-readdy="true" class="text-2xl font-['Pacifico'] text-white mb-6 inline-block">logo</a>
+                <p class="text-gray-400 mb-6">Protecting businesses with AI-driven security solutions since 2018.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-gray-800 transition-colors">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-gray-800 transition-colors">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-gray-800 transition-colors">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-gray-800 transition-colors">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-6 tech-font">Products</h3>
+                <ul class="space-y-4">
+                    <li><a href="#threat-detection" class="text-gray-400 hover:text-white transition-colors">Threat Detection</a></li>
+                    <li><a href="#cloud-security" class="text-gray-400 hover:text-white transition-colors">Cloud Security</a></li>
+                    <li><a href="#identity-management" class="text-gray-400 hover:text-white transition-colors">Identity Management</a></li>
+                    <li><a href="#data-protection" class="text-gray-400 hover:text-white transition-colors">Data Protection</a></li>
+                    <li><a href="#compliance-tools" class="text-gray-400 hover:text-white transition-colors">Compliance Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-6 tech-font">Resources</h3>
+                <ul class="space-y-4">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Whitepapers</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Case Studies</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Webinars</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-6 tech-font">Contact</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <div class="w-5 h-5 flex items-center justify-center mt-1 mr-3">
+                            <i class="ri-map-pin-line text-secondary"></i>
+                        </div>
+                        <span class="text-gray-400">123 Security Ave, San Francisco, CA 94103</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-5 h-5 flex items-center justify-center mr-3">
+                            <i class="ri-phone-line text-secondary"></i>
+                        </div>
+                        <span class="text-gray-400">+1 (555) 123-4567</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-5 h-5 flex items-center justify-center mr-3">
+                            <i class="ri-mail-line text-secondary"></i>
+                        </div>
+                        <span class="text-gray-400">info@pinaqtech.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-500 mb-4 md:mb-0">© 2025 PinaqTech. All rights reserved.</p>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Live Chat Widget -->
+<div class="fixed bottom-6 right-6 z-50">
+    <button class="w-16 h-16 flex items-center justify-center rounded-full bg-secondary text-dark shadow-lg hover:bg-opacity-90 transition-colors">
+        <i class="ri-message-3-line ri-xl"></i>
+    </button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Dark mode toggle
+    const toggle = document.getElementById('toggle');
+    const body = document.body;
+    
+    // Check for saved dark mode preference
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    toggle.checked = isDarkMode;
+    if (isDarkMode) {
+        body.classList.add('dark-mode');
+    }
+    
+    toggle.addEventListener('change', function() {
+        body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', this.checked);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // FAQ toggles
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    
+    faqToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            const icon = this.querySelector('.faq-icon');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.remove('ri-arrow-down-s-line');
+                icon.classList.add('ri-arrow-up-s-line');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('ri-arrow-up-s-line');
+                icon.classList.add('ri-arrow-down-s-line');
+            }
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Pricing toggle
+    const pricingToggle = document.getElementById('pricing-toggle');
+    const starterPrice = document.getElementById('starter-price');
+    const professionalPrice = document.getElementById('professional-price');
+    const enterprisePrice = document.getElementById('enterprise-price');
+    
+    pricingToggle.addEventListener('change', function() {
+        if (this.checked) {
+            // Annual pricing (20% discount)
+            starterPrice.textContent = '$399';
+            professionalPrice.textContent = '$1,039';
+            enterprisePrice.textContent = '$2,399';
+        } else {
+            // Monthly pricing
+            starterPrice.textContent = '$499';
+            professionalPrice.textContent = '$1,299';
+            enterprisePrice.textContent = '$2,999';
+        }
+    });
+});
+</script>
+</body>
+</html>

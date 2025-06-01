@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service | PinaqTech</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#2FDCE8',secondary:''},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+:root {
+    color-scheme: light dark;
+}
+.dark body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+.dark .bg-white {
+    background-color: #1a1a1a;
+}
+.dark .bg-gray-50 {
+    background-color: #111111;
+}
+.dark .text-gray-900 {
+    color: #ffffff;
+}
+.dark .text-gray-700 {
+    color: #e5e5e5;
+}
+.dark .text-gray-600 {
+    color: #d1d1d1;
+}
+.dark .border-gray-100 {
+    border-color: #333333;
+}
+.dark .border-gray-200 {
+    border-color: #333333;
+}
+.dark .bg-gray-100 {
+    background-color: #333333;
+}
+.dark .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+}
+.dark .bg-gray-800 {
+    background-color: #2d2d2d;
+}
+input:focus {
+    outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.toc-link.active {
+    color: #2FDCE8;
+    border-left-color: #2FDCE8;
+}
+.back-to-top {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header Navigation -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center">
+            <a href="/" class="text-2xl font-['Pacifico'] text-gray-800 mr-10">logo</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="/services" class="font-medium text-gray-600 hover:text-primary transition-colors">Services</a>
+                <a href="/products" class="font-medium text-gray-600 hover:text-primary transition-colors">Products</a>
+                <a href="/solutions" class="font-medium text-gray-600 hover:text-primary transition-colors">Solutions</a>
+                <a href="/about" class="font-medium text-gray-600 hover:text-primary transition-colors">About Us</a>
+                <a href="https://readdy.ai/home/c9944516-aaa9-4220-ada4-2b18d7ee5c9d/d972c980-b7ed-4935-a9ce-511e00f6192a" data-readdy="true" class="font-medium text-gray-600 hover:text-primary transition-colors">Careers</a>
+                <a href="https://readdy.ai/home/c9944516-aaa9-4220-ada4-2b18d7ee5c9d/bf326cb4-abca-4c3a-b9c4-85458ec4e188" data-readdy="true" class="font-medium text-gray-600 hover:text-primary transition-colors">Back to Original Page</a>
+            </nav>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button id="themeToggle" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700">
+                <i class="ri-moon-line text-gray-600 dark:text-gray-300"></i>
+            </button>
+            <a href="/login" class="hidden md:block font-medium text-gray-700 hover:text-primary transition-colors">Login</a>
+            <a href="/get-started" class="hidden md:block bg-primary text-white px-5 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-opacity-90 transition-colors">Get Started</a>
+            <button class="md:hidden w-10 h-10 flex items-center justify-center">
+                <i class="ri-menu-line text-xl text-gray-700"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="pt-16">
+    <!-- Page Title -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Terms of Service</h1>
+                <p class="text-gray-600">Last Updated: May 5, 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row max-w-6xl mx-auto">
+                <!-- Table of Contents - Sticky on Desktop -->
+                <div class="md:w-1/4 mb-8 md:mb-0">
+                    <div class="sticky top-24">
+                        <h2 class="text-xl font-bold text-gray-900 mb-4">Contents</h2>
+                        <ul class="space-y-2 border-l border-gray-200">
+                            <li><a href="#introduction" class="toc-link block pl-4 border-l-2 border-transparent text-gray-600 hover:text-primary hover:border-primary transition-colors">1. Introduction</a></li>
+                            <li><a href="#user-agreements" class="toc-link block pl-4 border-l-2 border-transparent text-gray-600 hover:text-primary hover:border-primary transition-colors">2. User Agreements</a></li>
+                            <li><a href="#acceptable-use" class="toc-link block pl-4 border-l-2 border-transparent text-gray-600 hover:text-primary hover:border-primary transition-colors">3. Acceptable Use Policy</a></li>
+                            <li><a href="#intellectual-property" class="toc-link block pl-4 border-l-2 border-transparent text-gray-600 hover:text-primary hover:border-primary transition-colors">4. Intellectual Property</a></li>
+                            <li><a href="#privacy" class="toc-link block pl-4 border-l-2 border-transparent text-gray-600 hover:text-primary hover:border-primary transition-colors">5. Privacy Considerations</a></li>
+                            <li><a href="#liability" class="toc-link block pl-4 border-l-2 border-transparent text-gray-600 hover:text-primary hover:border-primary transition-colors">6. Liability Limitations</a></li>
+                            <li><a href="#employment" class="toc-link block pl-4 border-l-2 border-transparent text-gray-600 hover:text-primary hover:border-primary transition-colors">7. Employment Terms</a></li>
+                            <li><a href="#termination" class="toc-link block pl-4 border-l-2 border-transparent text-gray-600 hover:text-primary hover:border-primary transition-colors">8. Termination</a></li>
+                            <li><a href="#amendments" class="toc-link block pl-4 border-l-2 border-transparent text-gray-600 hover:text-primary hover:border-primary transition-colors">9. Amendments</a></li>
+                            <li><a href="#contact" class="toc-link block pl-4 border-l-2 border-transparent text-gray-600 hover:text-primary hover:border-primary transition-colors">10. Contact Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Terms Content -->
+                <div class="md:w-3/4 md:pl-10">
+                    <div id="introduction" class="mb-12">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">1. Introduction and Scope</h2>
+                        <div class="prose text-gray-700 max-w-none">
+                            <p class="mb-4">Welcome to PinaqTech ("Company," "we," "us," or "our"). These Terms of Service ("Terms") govern your access to and use of PinaqTech's website, products, and services (collectively, the "Services").</p>
+                            
+                            <p class="mb-4">By accessing or using our Services, you agree to be bound by these Terms. If you do not agree to these Terms, please do not access or use our Services. These Terms constitute a legally binding agreement between you and PinaqTech.</p>
+                            
+                            <p class="mb-4">Our Services are designed for businesses and professionals in the cybersecurity field. By using our Services, you represent and warrant that you have the authority to enter into these Terms on behalf of yourself or the entity you represent.</p>
+                            
+                            <p>These Terms apply to all visitors, users, and others who access or use our Services, including our website, security products, consulting services, and any other offerings provided by PinaqTech.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="user-agreements" class="mb-12">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">2. User Agreements</h2>
+                        <div class="prose text-gray-700 max-w-none">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">2.1 Account Registration</h3>
+                            <p class="mb-4">To access certain features of our Services, you may be required to register for an account. You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete.</p>
+                            
+                            <p class="mb-4">You are responsible for safeguarding your account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account or any other breach of security. PinaqTech will not be liable for any loss or damage arising from your failure to comply with this section.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">2.2 User Responsibilities</h3>
+                            <p class="mb-4">You are responsible for all content and activity that occurs under your account. You agree not to use our Services for any illegal or unauthorized purpose and to comply with all applicable laws and regulations.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">2.3 Service Availability</h3>
+                            <p class="mb-4">PinaqTech strives to ensure that our Services are available 24/7. However, we do not guarantee that our Services will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to our Services, resulting in interruptions, delays, or errors.</p>
+                            
+                            <p>We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify our Services at any time without prior notice. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use our Services during any downtime or discontinuation of our Services.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="acceptable-use" class="mb-12">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">3. Acceptable Use Policy</h2>
+                        <div class="prose text-gray-700 max-w-none">
+                            <p class="mb-4">Our Acceptable Use Policy is designed to ensure that our Services are used in a manner that is safe, legal, and respectful of others. By using our Services, you agree to abide by the following guidelines:</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">3.1 Prohibited Activities</h3>
+                            <p class="mb-4">You agree not to engage in any of the following prohibited activities:</p>
+                            
+                            <ul class="list-disc pl-6 mb-4 space-y-2">
+                                <li>Using our Services for any illegal purpose or in violation of any local, state, national, or international law</li>
+                                <li>Violating or infringing upon the rights of others, including but not limited to their intellectual property, privacy, and publicity rights</li>
+                                <li>Engaging in any activity that disrupts, interferes with, or negatively affects our Services, servers, or networks</li>
+                                <li>Attempting to gain unauthorized access to our Services, other user accounts, or computer systems or networks</li>
+                                <li>Using our Services to develop, design, or create any competing product or service</li>
+                                <li>Engaging in any activity that could disable, overburden, damage, or impair our Services</li>
+                                <li>Using any robot, spider, or other automated device, process, or means to access our Services for any purpose</li>
+                                <li>Introducing any viruses, Trojan horses, worms, logic bombs, or other malicious code or material</li>
+                                <li>Collecting or harvesting any information from our Services, including user accounts</li>
+                            </ul>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">3.2 Security Testing and Ethical Hacking</h3>
+                            <p class="mb-4">PinaqTech's Services may include security testing tools and resources. You agree to use these tools only on systems and networks for which you have explicit permission to test. Unauthorized security testing is strictly prohibited and may violate applicable laws.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">3.3 Content Guidelines</h3>
+                            <p>You are solely responsible for any content you post, upload, or otherwise make available through our Services. You agree that all such content complies with our Acceptable Use Policy and does not violate any applicable laws or infringe upon any third-party rights.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="intellectual-property" class="mb-12">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">4. Intellectual Property Rights</h2>
+                        <div class="prose text-gray-700 max-w-none">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">4.1 PinaqTech's Intellectual Property</h3>
+                            <p class="mb-4">The Services and all content, features, and functionality thereof, including but not limited to all information, software, text, displays, images, video, audio, design, and the design, selection, and arrangement thereof, are owned by PinaqTech, its licensors, or other providers of such material and are protected by copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
+                            
+                            <p class="mb-4">These Terms permit you to use our Services for your personal, non-commercial use only. You must not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our Services, except as follows:</p>
+                            
+                            <ul class="list-disc pl-6 mb-4 space-y-2">
+                                <li>Your computer may temporarily store copies of such materials in RAM incidental to your accessing and viewing those materials</li>
+                                <li>You may store files that are automatically cached by your web browser for display enhancement purposes</li>
+                                <li>You may print or download one copy of a reasonable number of pages of the website for your own personal, non-commercial use and not for further reproduction, publication, or distribution</li>
+                                <li>If we provide desktop, mobile, or other applications for download, you may download a single copy to your computer or mobile device solely for your own personal, non-commercial use, provided you agree to be bound by our end user license agreement for such applications</li>
+                            </ul>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">4.2 Trademarks</h3>
+                            <p class="mb-4">The PinaqTech name, logo, and all related names, logos, product and service names, designs, and slogans are trademarks of PinaqTech or its affiliates or licensors. You must not use such marks without the prior written permission of PinaqTech. All other names, logos, product and service names, designs, and slogans on our Services are the trademarks of their respective owners.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">4.3 User Content</h3>
+                            <p>If you provide any content to us (e.g., feedback, suggestions, or testimonials), you grant PinaqTech a non-exclusive, worldwide, royalty-free, perpetual, irrevocable, and fully sublicensable right to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content in any form, media, or technology. You represent and warrant that you own or control all rights in and to such content and have the right to grant the license above.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="privacy" class="mb-12">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">5. Privacy Considerations</h2>
+                        <div class="prose text-gray-700 max-w-none">
+                            <p class="mb-4">At PinaqTech, we take your privacy seriously. Our Privacy Policy, available at <a href="#" class="text-primary hover:underline">www.pinaqtech.com/privacy</a>, describes how we collect, use, and share information about you when you use our Services. By using our Services, you agree to our collection, use, and sharing of information as described in our Privacy Policy.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">5.1 Data Processing</h3>
+                            <p class="mb-4">When you use our Services, we may process certain data on your behalf. In such cases, you remain the data controller, and PinaqTech acts as a data processor. You are responsible for ensuring that you have the necessary rights and permissions to share such data with us.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">5.2 Security Measures</h3>
+                            <p class="mb-4">We implement appropriate technical and organizational measures to protect your personal data against unauthorized or unlawful processing, accidental loss, destruction, or damage. However, no method of transmission over the Internet or method of electronic storage is 100% secure. Therefore, while we strive to use commercially acceptable means to protect your personal data, we cannot guarantee its absolute security.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">5.3 Third-Party Services</h3>
+                            <p>Our Services may contain links to or integrate with third-party websites, services, or applications. We are not responsible for the privacy practices or content of these third parties. We encourage you to review the privacy policies of any third-party services you access through our Services.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="liability" class="mb-12">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">6. Liability Limitations</h2>
+                        <div class="prose text-gray-700 max-w-none">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">6.1 Disclaimer of Warranties</h3>
+                            <p class="mb-4">YOUR USE OF OUR SERVICES IS AT YOUR SOLE RISK. OUR SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR COURSE OF PERFORMANCE.</p>
+                            
+                            <p class="mb-4">PINAQTECH, ITS SUBSIDIARIES, AFFILIATES, AND LICENSORS DO NOT WARRANT THAT (A) OUR SERVICES WILL FUNCTION UNINTERRUPTED, SECURE, OR AVAILABLE AT ANY PARTICULAR TIME OR LOCATION; (B) ANY ERRORS OR DEFECTS WILL BE CORRECTED; (C) OUR SERVICES ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS; OR (D) THE RESULTS OF USING OUR SERVICES WILL MEET YOUR REQUIREMENTS.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">6.2 Limitation of Liability</h3>
+                            <p class="mb-4">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL PINAQTECH, ITS DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM (A) YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE OUR SERVICES; (B) ANY CONDUCT OR CONTENT OF ANY THIRD PARTY ON OUR SERVICES; (C) ANY CONTENT OBTAINED FROM OUR SERVICES; AND (D) UNAUTHORIZED ACCESS, USE, OR ALTERATION OF YOUR TRANSMISSIONS OR CONTENT, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), OR ANY OTHER LEGAL THEORY, WHETHER OR NOT WE HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+                            
+                            <p class="mb-4">IN NO EVENT SHALL OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS EXCEED THE AMOUNT PAID BY YOU, IF ANY, TO PINAQTECH FOR THE SERVICES DURING THE TWELVE (12) MONTH PERIOD PRIOR TO THE CLAIM GIVING RISE TO SUCH LIABILITY.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">6.3 Indemnification</h3>
+                            <p>You agree to defend, indemnify, and hold harmless PinaqTech, its directors, employees, partners, agents, suppliers, and affiliates from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms or your use of our Services, including, but not limited to, any use of our Services' content other than as expressly authorized in these Terms.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="employment" class="mb-12">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">7. Employment Terms</h2>
+                        <div class="prose text-gray-700 max-w-none">
+                            <p class="mb-4">This section applies to individuals who are employed by or seeking employment with PinaqTech.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">7.1 Employment Eligibility</h3>
+                            <p class="mb-4">PinaqTech is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, gender, gender identity, sexual orientation, national origin, age, disability, or any other characteristic protected by applicable law.</p>
+                            
+                            <p class="mb-4">All offers of employment are contingent upon verification of your identity and eligibility to work in the country of employment, as well as successful completion of a background check.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">7.2 Confidentiality and Non-Disclosure</h3>
+                            <p class="mb-4">As an employee of PinaqTech, you may have access to confidential and proprietary information. You agree to maintain the confidentiality of such information during and after your employment with PinaqTech. You may be required to sign a separate confidentiality and non-disclosure agreement as a condition of your employment.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">7.3 Intellectual Property Assignment</h3>
+                            <p class="mb-4">Any inventions, discoveries, improvements, or works of authorship that you create during your employment with PinaqTech and that relate to PinaqTech's business shall be the exclusive property of PinaqTech. You agree to assign all rights, title, and interest in such intellectual property to PinaqTech.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">7.4 Code of Conduct</h3>
+                            <p>All employees are expected to adhere to PinaqTech's Code of Conduct, which includes but is not limited to maintaining high ethical standards, treating others with respect, and complying with all applicable laws and regulations. Violations of the Code of Conduct may result in disciplinary action, up to and including termination of employment.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="termination" class="mb-12">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">8. Termination</h2>
+                        <div class="prose text-gray-700 max-w-none">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">8.1 Termination by You</h3>
+                            <p class="mb-4">You may terminate these Terms at any time by discontinuing your use of our Services and closing your account, if applicable.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">8.2 Termination by PinaqTech</h3>
+                            <p class="mb-4">We may terminate or suspend your access to our Services immediately, without prior notice or liability, for any reason whatsoever, including, without limitation, if you breach these Terms.</p>
+                            
+                            <p class="mb-4">Upon termination, your right to use our Services will immediately cease. If you wish to terminate your account, you may simply discontinue using our Services or contact us to request account deletion.</p>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">8.3 Effects of Termination</h3>
+                            <p>All provisions of these Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="amendments" class="mb-12">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">9. Amendments and Updates</h2>
+                        <div class="prose text-gray-700 max-w-none">
+                            <p class="mb-4">We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+                            
+                            <p class="mb-4">By continuing to access or use our Services after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use our Services.</p>
+                            
+                            <p>We will notify you of any changes to these Terms by posting the new Terms on our website and updating the "Last Updated" date at the top of these Terms. We encourage you to review these Terms periodically for any changes.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="contact" class="mb-12">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">10. Contact Information</h2>
+                        <div class="prose text-gray-700 max-w-none">
+                            <p class="mb-4">If you have any questions about these Terms, please contact us:</p>
+                            
+                            <ul class="list-none space-y-2 mb-4">
+                                <li><strong>By email:</strong> legal@pinaqtech.com</li>
+                                <li><strong>By phone:</strong> +1 (888) 123-4567</li>
+                                <li><strong>By mail:</strong> PinaqTech Legal Department, 123 Security Ave, Cyber City, CA 94103</li>
+                            </ul>
+                            
+                            <p>Our customer support team is available Monday through Friday, 9:00 AM to 5:00 PM Pacific Time, excluding holidays.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top fixed bottom-6 right-20 w-12 h-12 flex items-center justify-center bg-primary rounded-full shadow-lg hover:bg-opacity-90 transition-colors z-50">
+        <i class="ri-arrow-up-line text-white text-xl"></i>
+    </button>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+            <div class="lg:col-span-2">
+                <a href="/" class="text-2xl font-['Pacifico'] text-white mb-4 inline-block">logo</a>
+                <p class="text-gray-400 mb-6 max-w-md">Providing enterprise-grade security solutions to protect your organization's most valuable assets in today's evolving threat landscape.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Services</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Consulting Services</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Managed Security</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Implementation Services</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Training Programs</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Company</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">About Us</a></li>
+                    <li><a href="https://readdy.ai/home/c9944516-aaa9-4220-ada4-2b18d7ee5c9d/d972c980-b7ed-4935-a9ce-511e00f6192a" data-readdy="true" class="text-gray-400 hover:text-primary transition-colors">Careers</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Partners</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Blog</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">News</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                            <i class="ri-map-pin-line text-primary"></i>
+                        </div>
+                        <span class="text-gray-400">123 Security Ave, Cyber City, CA 94103</span>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                            <i class="ri-mail-line text-primary"></i>
+                        </div>
+                        <span class="text-gray-400">contact@pinaqtech.com</span>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                            <i class="ri-phone-line text-primary"></i>
+                        </div>
+                        <span class="text-gray-400">+1 (888) 123-4567</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 PinaqTech. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 text-sm hover:text-primary transition-colors">Privacy Policy</a>
+                    <a href="https://readdy.ai/home/c9944516-aaa9-4220-ada4-2b18d7ee5c9d/abb8f22b-ab23-4248-93f2-d3e5c43adb3f" data-readdy="true" class="text-primary text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 text-sm hover:text-primary transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Live Chat Widget -->
+<div class="fixed bottom-6 right-6 z-50">
+    <button class="w-14 h-14 flex items-center justify-center bg-primary rounded-full shadow-lg hover:bg-opacity-90 transition-colors">
+        <i class="ri-message-3-line text-white text-2xl"></i>
+    </button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Theme Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('i');
+    const htmlElement = document.documentElement;
+    
+    function setTheme(isDark) {
+        if (isDark) {
+            htmlElement.classList.add('dark');
+            themeIcon.classList.remove('ri-moon-line');
+            themeIcon.classList.add('ri-sun-line');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            htmlElement.classList.remove('dark');
+            themeIcon.classList.remove('ri-sun-line');
+            themeIcon.classList.add('ri-moon-line');
+            localStorage.setItem('theme', 'light');
+        }
+    }
+    
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme === 'dark');
+    }
+    
+    themeToggle.addEventListener('click', () => {
+        const isDark = !htmlElement.classList.contains('dark');
+        setTheme(isDark);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Table of Contents Active Link
+    const sections = document.querySelectorAll('div[id]');
+    const tocLinks = document.querySelectorAll('.toc-link');
+    
+    function setActiveLink() {
+        let scrollPosition = window.scrollY;
+        
+        // Add buffer for better UX
+        scrollPosition += 100;
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+            
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                tocLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + sectionId) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+    
+    window.addEventListener('scroll', setActiveLink);
+    setActiveLink(); // Set initial active link
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Back to Top Button
+    const backToTopButton = document.getElementById('backToTop');
+    
+    function toggleBackToTopButton() {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    }
+    
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    
+    window.addEventListener('scroll', toggleBackToTopButton);
+    toggleBackToTopButton(); // Set initial state
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth Scroll for TOC Links
+    const tocLinks = document.querySelectorAll('.toc-link');
+    
+    tocLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                const offsetTop = targetElement.offsetTop - 80; // Adjust for header height
+                
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>

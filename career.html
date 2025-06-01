@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers | PinaqTech</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#2FDCE8',secondary:''},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+    font-family: 'Inter', sans-serif;
+}
+:root {
+    color-scheme: light dark;
+}
+.dark body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+.dark .bg-white {
+    background-color: #1a1a1a;
+}
+.dark .bg-gray-50 {
+    background-color: #111111;
+}
+.dark .text-gray-900 {
+    color: #ffffff;
+}
+.dark .text-gray-700 {
+    color: #e5e5e5;
+}
+.dark .text-gray-600 {
+    color: #d1d1d1;
+}
+.dark .border-gray-100 {
+    border-color: #333333;
+}
+.dark .border-gray-200 {
+    border-color: #333333;
+}
+.dark .bg-gray-100 {
+    background-color: #333333;
+}
+.dark .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+}
+.dark .bg-gray-800 {
+    background-color: #2d2d2d;
+}
+.hero-section {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), url('https://readdy.ai/api/search-image?query=diverse%2520modern%2520office%2520environment%2520with%2520professionals%2520collaborating%252C%2520bright%2520airy%2520workspace%2520with%2520natural%2520light%252C%2520subtle%2520blue%2520accents%2520matching%2520company%2520colors%252C%2520technology-focused%2520setting%2520with%2520clean%2520minimal%2520aesthetic%252C%2520showing%2520positive%2520workplace%2520culture%2520and%2520teamwork&width=1920&height=800&seq=12346&orientation=landscape');
+    background-size: cover;
+    background-position: center;
+}
+input:focus {
+    outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.department-tab.active {
+    color: #2FDCE8;
+    border-color: #2FDCE8;
+}
+.department-content {
+    display: none;
+}
+.department-content.active {
+    display: block;
+}
+.testimonial-slider {
+    scroll-behavior: smooth;
+}
+.application-step.active .step-number {
+    background-color: #2FDCE8;
+    color: white;
+}
+.application-step.active .step-content {
+    display: block;
+}
+.application-step .step-content {
+    display: none;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header Navigation -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center">
+            <a href="/" class="text-2xl font-['Pacifico'] text-gray-800 mr-10">logo</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="/services" class="font-medium text-gray-600 hover:text-primary transition-colors">Services</a>
+                <a href="/products" class="font-medium text-gray-600 hover:text-primary transition-colors">Products</a>
+                <a href="/solutions" class="font-medium text-gray-600 hover:text-primary transition-colors">Solutions</a>
+                <a href="/about" class="font-medium text-gray-600 hover:text-primary transition-colors">About Us</a>
+                <a href="https://readdy.ai/home/c9944516-aaa9-4220-ada4-2b18d7ee5c9d/d972c980-b7ed-4935-a9ce-511e00f6192a" data-readdy="true" class="font-medium text-primary border-b-2 border-primary pb-1">Careers</a>
+            </nav>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button id="themeToggle" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700">
+                <i class="ri-moon-line text-gray-600 dark:text-gray-300"></i>
+            </button>
+            <a href="/login" class="hidden md:block font-medium text-gray-700 hover:text-primary transition-colors">Login</a>
+            <a href="/get-started" class="hidden md:block bg-primary text-white px-5 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-opacity-90 transition-colors">Get Started</a>
+            <button class="md:hidden w-10 h-10 flex items-center justify-center">
+                <i class="ri-menu-line text-xl text-gray-700"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="pt-16">
+    <!-- Hero Section -->
+    <section class="hero-section py-20 md:py-32">
+        <div class="container mx-auto px-4 w-full">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Join Our <span class="text-primary">Team</span></h1>
+                <p class="text-lg text-gray-700 mb-8">Build your career at PinaqTech, where innovation meets security. We're looking for talented individuals who are passionate about creating a safer digital world.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#openings" class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-opacity-90 transition-colors">View Openings</a>
+                    <a href="#culture" class="bg-white border border-gray-300 text-gray-700 px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:border-primary hover:text-primary transition-colors">Our Culture</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Stats -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-primary mb-2">150+</div>
+                    <p class="text-gray-600">Employees Worldwide</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-primary mb-2">12</div>
+                    <p class="text-gray-600">Countries</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-primary mb-2">96%</div>
+                    <p class="text-gray-600">Employee Satisfaction</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-primary mb-2">4.8/5</div>
+                    <p class="text-gray-600">Glassdoor Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Culture -->
+    <section id="culture" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Culture</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">At PinaqTech, we foster an environment of innovation, collaboration, and continuous learning. Our culture is built on these core values:</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-shield-check-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Security First</h3>
+                    <p class="text-gray-600">We prioritize security in everything we do, from our products to our internal practices. We believe in creating a safer digital world for everyone.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-lightbulb-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Innovation</h3>
+                    <p class="text-gray-600">We encourage creative thinking and embrace new ideas. Our team is constantly pushing boundaries to develop cutting-edge security solutions.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-team-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Collaboration</h3>
+                    <p class="text-gray-600">We believe in the power of teamwork. By combining our diverse skills and perspectives, we create better solutions for our clients.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-book-open-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Continuous Learning</h3>
+                    <p class="text-gray-600">We invest in our team's growth through training, certifications, and knowledge sharing. We're committed to staying at the forefront of security expertise.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-global-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Diversity & Inclusion</h3>
+                    <p class="text-gray-600">We celebrate diverse backgrounds, experiences, and perspectives. We believe that an inclusive workplace leads to better innovation and stronger solutions.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-customer-service-2-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Client Focus</h3>
+                    <p class="text-gray-600">We're dedicated to understanding our clients' needs and delivering exceptional value. Their success is our success.</p>
+                </div>
+            </div>
+            
+            <!-- Employee Testimonials -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-900 text-center mb-10">What Our Team Says</h3>
+                
+                <div class="relative">
+                    <div class="testimonial-slider flex overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide space-x-6">
+                        <div class="min-w-[350px] md:min-w-[400px] bg-white rounded-lg shadow-sm border border-gray-100 p-6 snap-start">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center mr-4">
+                                    <i class="ri-user-line text-gray-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Emily Richardson</h4>
+                                    <p class="text-sm text-gray-600">Security Engineer, 3 years</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">"Working at PinaqTech has been the highlight of my career. I've had the opportunity to work on cutting-edge security solutions while being supported by an amazing team. The company truly invests in our growth and well-being."</p>
+                            <div class="flex text-primary">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="min-w-[350px] md:min-w-[400px] bg-white rounded-lg shadow-sm border border-gray-100 p-6 snap-start">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center mr-4">
+                                    <i class="ri-user-line text-gray-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Michael Patel</h4>
+                                    <p class="text-sm text-gray-600">Security Consultant, 2 years</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">"The culture at PinaqTech is unlike any other company I've worked for. There's a perfect balance of challenging work and supportive environment. I've grown more in my two years here than in my entire previous career."</p>
+                            <div class="flex text-primary">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="min-w-[350px] md:min-w-[400px] bg-white rounded-lg shadow-sm border border-gray-100 p-6 snap-start">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center mr-4">
+                                    <i class="ri-user-line text-gray-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Sophia Chen</h4>
+                                    <p class="text-sm text-gray-600">Research Analyst, 4 years</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">"As a researcher, I appreciate how PinaqTech values innovation and gives us the freedom to explore new ideas. The collaborative environment allows us to tackle complex security challenges together, making our work both impactful and fulfilling."</p>
+                            <div class="flex text-primary">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="min-w-[350px] md:min-w-[400px] bg-white rounded-lg shadow-sm border border-gray-100 p-6 snap-start">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center mr-4">
+                                    <i class="ri-user-line text-gray-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Daniel Okonkwo</h4>
+                                    <p class="text-sm text-gray-600">Product Manager, 3 years</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">"The leadership at PinaqTech truly cares about both our clients and employees. We're encouraged to maintain a healthy work-life balance while still delivering exceptional results. It's refreshing to work for a company with such strong values."</p>
+                            <div class="flex text-primary">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-center space-x-2 mt-6">
+                        <button class="w-3 h-3 rounded-full bg-gray-300 focus:outline-none testimonial-dot active"></button>
+                        <button class="w-3 h-3 rounded-full bg-gray-300 focus:outline-none testimonial-dot"></button>
+                        <button class="w-3 h-3 rounded-full bg-gray-300 focus:outline-none testimonial-dot"></button>
+                        <button class="w-3 h-3 rounded-full bg-gray-300 focus:outline-none testimonial-dot"></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Company Video -->
+            <div class="bg-gray-50 rounded-lg overflow-hidden">
+                <div class="aspect-w-16 aspect-h-9 relative h-[400px]">
+                    <div class="absolute inset-0 flex items-center justify-center bg-gray-200">
+                        <div class="text-center">
+                            <div class="w-20 h-20 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mx-auto mb-4">
+                                <i class="ri-play-fill text-primary text-3xl"></i>
+                            </div>
+                            <p class="text-gray-700 font-medium">Watch our company culture video</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Benefits Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Employee Benefits</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We believe in taking care of our team. Here's what you can expect when you join PinaqTech:</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-heart-pulse-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Health & Wellness</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Comprehensive health insurance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Dental and vision coverage</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Mental health support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Wellness program with fitness stipend</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-book-open-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Professional Development</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Training and certification budget</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Conference attendance opportunities</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Mentorship program</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Career advancement paths</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-time-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Work-Life Balance</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Flexible work arrangements</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Generous paid time off</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Parental leave</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Company-wide wellness days</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-money-dollar-circle-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Financial Benefits</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Competitive salary</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">401(k) matching</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Performance bonuses</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Employee stock options</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-community-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Company Culture</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Team building events</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Volunteer opportunities</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Diversity and inclusion initiatives</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Recognition programs</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+                        <i class="ri-building-4-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Office Perks</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Modern workspaces</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Catered lunches</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Snacks and beverages</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Remote work equipment stipend</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Openings -->
+    <section id="openings" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Current Openings</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Explore our available positions and find the perfect role for your skills and career goals.</p>
+            </div>
+            
+            <!-- Department Tabs -->
+            <div class="flex flex-wrap border-b border-gray-200 mb-8 overflow-x-auto">
+                <button class="department-tab active px-6 py-3 text-primary font-medium border-b-2 border-primary whitespace-nowrap" data-department="all">All Departments</button>
+                <button class="department-tab px-6 py-3 text-gray-600 font-medium whitespace-nowrap hover:text-primary" data-department="security">Security Engineering</button>
+                <button class="department-tab px-6 py-3 text-gray-600 font-medium whitespace-nowrap hover:text-primary" data-department="consulting">Consulting</button>
+                <button class="department-tab px-6 py-3 text-gray-600 font-medium whitespace-nowrap hover:text-primary" data-department="research">Research</button>
+                <button class="department-tab px-6 py-3 text-gray-600 font-medium whitespace-nowrap hover:text-primary" data-department="product">Product</button>
+                <button class="department-tab px-6 py-3 text-gray-600 font-medium whitespace-nowrap hover:text-primary" data-department="operations">Operations</button>
+            </div>
+            
+            <!-- Job Listings -->
+            <div class="department-content active" id="all-content">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Senior Security Engineer</h3>
+                                <p class="text-gray-600">Security Engineering | Remote (US)</p>
+                            </div>
+                            <span class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm font-medium rounded-full">Full-time</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Design and implement security solutions to protect our clients' critical infrastructure. Lead vulnerability assessments and develop mitigation strategies.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-900 mb-2">Requirements:</h4>
+                            <ul class="space-y-1">
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">5+ years of security engineering experience</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">CISSP, CEH, or equivalent certification</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Experience with cloud security (AWS, Azure)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#apply" class="inline-block bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-opacity-90 transition-colors">Apply Now</a>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Security Consultant</h3>
+                                <p class="text-gray-600">Consulting | New York, NY</p>
+                            </div>
+                            <span class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm font-medium rounded-full">Full-time</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Work with clients to assess their security posture, identify vulnerabilities, and develop comprehensive security strategies tailored to their needs.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-900 mb-2">Requirements:</h4>
+                            <ul class="space-y-1">
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">3+ years in security consulting</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Strong communication and client management skills</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Experience with risk assessment frameworks</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#apply" class="inline-block bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-opacity-90 transition-colors">Apply Now</a>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Security Researcher</h3>
+                                <p class="text-gray-600">Research | Remote (Global)</p>
+                            </div>
+                            <span class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm font-medium rounded-full">Full-time</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Conduct cutting-edge research on emerging security threats and vulnerabilities. Develop new methodologies for detecting and mitigating security risks.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-900 mb-2">Requirements:</h4>
+                            <ul class="space-y-1">
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Advanced degree in Computer Science or related field</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Experience with vulnerability research</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Strong analytical and problem-solving skills</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#apply" class="inline-block bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-opacity-90 transition-colors">Apply Now</a>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Product Manager, Security Solutions</h3>
+                                <p class="text-gray-600">Product | San Francisco, CA</p>
+                            </div>
+                            <span class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm font-medium rounded-full">Full-time</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Lead the development and strategy for our security product portfolio. Work with engineering, design, and marketing teams to deliver innovative security solutions.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-900 mb-2">Requirements:</h4>
+                            <ul class="space-y-1">
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">4+ years of product management experience</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Background in cybersecurity or related field</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Experience with agile development methodologies</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#apply" class="inline-block bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-opacity-90 transition-colors">Apply Now</a>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Security Operations Analyst</h3>
+                                <p class="text-gray-600">Operations | London, UK</p>
+                            </div>
+                            <span class="px-3 py-1 bg-primary bg-opacity-10 text-primary text-sm font-medium rounded-full">Full-time</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Monitor and analyze security alerts, incidents, and threats. Respond to security events and implement remediation measures to protect client environments.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-900 mb-2">Requirements:</h4>
+                            <ul class="space-y-1">
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">2+ years in security operations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Experience with SIEM tools and incident response</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Strong analytical and troubleshooting skills</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#apply" class="inline-block bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-opacity-90 transition-colors">Apply Now</a>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Technical Writer, Security</h3>
+                                <p class="text-gray-600">Operations | Remote (US)</p>
+                            </div>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full">Part-time</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Create clear, concise, and comprehensive documentation for our security products and services. Translate complex technical concepts into accessible content.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-900 mb-2">Requirements:</h4>
+                            <ul class="space-y-1">
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">3+ years of technical writing experience</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Understanding of cybersecurity concepts</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                                        <i class="ri-check-line text-primary text-sm"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Experience with documentation tools and systems</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#apply" class="inline-block bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-opacity-90 transition-colors">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Department-specific content (hidden by default) -->
+            <div class="department-content" id="security-content">
+                <!-- Security Engineering jobs would be listed here -->
+            </div>
+            
+            <div class="department-content" id="consulting-content">
+                <!-- Consulting jobs would be listed here -->
+            </div>
+            
+            <div class="department-content" id="research-content">
+                <!-- Research jobs would be listed here -->
+            </div>
+            
+            <div class="department-content" id="product-content">
+                <!-- Product jobs would be listed here -->
+            </div>
+            
+            <div class="department-content" id="operations-content">
+                <!-- Operations jobs would be listed here -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-6">Don't see the perfect role? We're always looking for talented individuals to join our team.</p>
+                <a href="#apply" class="inline-block bg-white border border-gray-300 text-gray-700 px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:border-primary hover:text-primary transition-colors">Submit General Application</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process -->
+    <section id="apply" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Application Process</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Our hiring process is designed to be transparent, efficient, and respectful of your time. Here's what to expect:</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- Timeline Line -->
+                    <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200 hidden md:block"></div>
+                    
+                    <!-- Steps -->
+                    <div class="space-y-8">
+                        <div class="application-step active flex flex-col md:flex-row">
+                            <div class="flex items-center mb-4 md:mb-0 md:w-1/4">
+                                <div class="step-number w-16 h-16 flex items-center justify-center bg-primary text-white rounded-full font-bold text-xl z-10">1</div>
+                            </div>
+                            <div class="md:w-3/4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Application Submission</h3>
+                                <div class="step-content block">
+                                    <p class="text-gray-600 mb-4">Submit your application through our careers portal. Include your resume, cover letter, and any relevant portfolio items or work samples.</p>
+                                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                                        <h4 class="font-semibold text-gray-900 mb-4">Application Form</h4>
+                                        <form>
+                                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                                <div>
+                                                    <label class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                                                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary">
+                                                </div>
+                                                <div>
+                                                    <label class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                                                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary">
+                                                </div>
+                                            </div>
+                                            <div class="mb-4">
+                                                <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                                <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary">
+                                            </div>
+                                            <div class="mb-4">
+                                                <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                                                <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary">
+                                            </div>
+                                            <div class="mb-4">
+                                                <label class="block text-sm font-medium text-gray-700 mb-1">Position</label>
+                                                <select class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary pr-8">
+                                                    <option>Select a position</option>
+                                                    <option>Senior Security Engineer</option>
+                                                    <option>Security Consultant</option>
+                                                    <option>Security Researcher</option>
+                                                    <option>Product Manager, Security Solutions</option>
+                                                    <option>Security Operations Analyst</option>
+                                                    <option>Technical Writer, Security</option>
+                                                    <option>General Application</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-4">
+                                                <label class="block text-sm font-medium text-gray-700 mb-1">Resume/CV</label>
+                                                <div class="flex items-center justify-center w-full">
+                                                    <label class="flex flex-col w-full h-32 border-2 border-dashed border-gray-300 rounded hover:bg-gray-50 hover:border-primary cursor-pointer">
+                                                        <div class="flex flex-col items-center justify-center pt-7">
+                                                            <i class="ri-upload-2-line text-gray-400 text-3xl"></i>
+                                                            <p class="pt-1 text-sm text-gray-600">Drag and drop or click to upload</p>
+                                                            <p class="text-xs text-gray-500">PDF, DOC, DOCX (Max 5MB)</p>
+                                                        </div>
+                                                        <input type="file" class="hidden">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="mb-4">
+                                                <label class="block text-sm font-medium text-gray-700 mb-1">Cover Letter (Optional)</label>
+                                                <textarea class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary h-32"></textarea>
+                                            </div>
+                                            <div class="mb-6">
+                                                <label class="flex items-start">
+                                                    <input type="checkbox" class="mt-1 mr-2">
+                                                    <span class="text-sm text-gray-600">I consent to PinaqTech processing my personal data for recruitment purposes. I understand that my data will be stored securely and will not be shared with third parties without my consent.</span>
+                                                </label>
+                                            </div>
+                                            <button type="submit" class="w-full bg-primary text-white py-3 !rounded-button whitespace-nowrap font-medium hover:bg-opacity-90 transition-colors">Submit Application</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="application-step flex flex-col md:flex-row">
+                            <div class="flex items-center mb-4 md:mb-0 md:w-1/4">
+                                <div class="step-number w-16 h-16 flex items-center justify-center bg-gray-200 text-gray-700 rounded-full font-bold text-xl z-10">2</div>
+                            </div>
+                            <div class="md:w-3/4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Initial Screening</h3>
+                                <div class="step-content">
+                                    <p class="text-gray-600 mb-4">Our recruitment team will review your application and assess your qualifications against the role requirements. If there's a good match, we'll reach out to schedule an initial phone or video interview.</p>
+                                    <p class="text-gray-600">Timeframe: 1-2 weeks after application</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="application-step flex flex-col md:flex-row">
+                            <div class="flex items-center mb-4 md:mb-0 md:w-1/4">
+                                <div class="step-number w-16 h-16 flex items-center justify-center bg-gray-200 text-gray-700 rounded-full font-bold text-xl z-10">3</div>
+                            </div>
+                            <div class="md:w-3/4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Technical Assessment</h3>
+                                <div class="step-content">
+                                    <p class="text-gray-600 mb-4">Depending on the role, you may be asked to complete a technical assessment, case study, or practical exercise to demonstrate your skills and problem-solving abilities.</p>
+                                    <p class="text-gray-600">Timeframe: 1 week after initial screening</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="application-step flex flex-col md:flex-row">
+                            <div class="flex items-center mb-4 md:mb-0 md:w-1/4">
+                                <div class="step-number w-16 h-16 flex items-center justify-center bg-gray-200 text-gray-700 rounded-full font-bold text-xl z-10">4</div>
+                            </div>
+                            <div class="md:w-3/4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Team Interviews</h3>
+                                <div class="step-content">
+                                    <p class="text-gray-600 mb-4">Meet with potential team members, managers, and cross-functional colleagues. These interviews will assess your technical expertise, cultural fit, and alignment with our values.</p>
+                                    <p class="text-gray-600">Timeframe: 1-2 weeks after technical assessment</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="application-step flex flex-col md:flex-row">
+                            <div class="flex items-center mb-4 md:mb-0 md:w-1/4">
+                                <div class="step-number w-16 h-16 flex items-center justify-center bg-gray-200 text-gray-700 rounded-full font-bold text-xl z-10">5</div>
+                            </div>
+                            <div class="md:w-3/4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Final Decision & Offer</h3>
+                                <div class="step-content">
+                                    <p class="text-gray-600 mb-4">After completing all interviews, we'll make a decision and extend an offer to the selected candidate. We'll discuss compensation, benefits, start date, and answer any questions you may have.</p>
+                                    <p class="text-gray-600">Timeframe: 1 week after final interview</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">How long does the hiring process typically take?</h4>
+                            <p class="text-gray-600">Our hiring process typically takes 3-5 weeks from application to offer, though this may vary depending on the position and number of applicants.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Do you offer relocation assistance?</h4>
+                            <p class="text-gray-600">Yes, we offer relocation assistance for certain roles. This will be discussed during the interview process if applicable.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">What is your remote work policy?</h4>
+                            <p class="text-gray-600">We offer flexible work arrangements, including fully remote positions for many roles. Some positions may require occasional office presence or be location-specific.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">How can I prepare for interviews at PinaqTech?</h4>
+                            <p class="text-gray-600">Research our company, products, and services. Be prepared to discuss your experience and how it relates to the role. For technical positions, review relevant security concepts and be ready to demonstrate your problem-solving skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Have Questions?</h2>
+                <p class="text-lg text-gray-600 mb-8">Our recruitment team is here to help you with any questions about our open positions or application process.</p>
+                <div class="flex flex-col md:flex-row justify-center gap-6 mb-12">
+                    <div class="flex items-center justify-center">
+                        <div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-3">
+                            <i class="ri-mail-line text-primary"></i>
+                        </div>
+                        <span class="text-gray-700">careers@pinaqtech.com</span>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-3">
+                            <i class="ri-phone-line text-primary"></i>
+                        </div>
+                        <span class="text-gray-700">+1 (888) 123-4567 ext. 2</span>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://www.linkedin.com/company/pinaqtech" class="flex items-center px-4 py-2 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors">
+                        <div class="w-6 h-6 flex items-center justify-center mr-2">
+                            <i class="ri-linkedin-fill text-blue-600"></i>
+                        </div>
+                        <span class="text-gray-700">Follow us on LinkedIn</span>
+                    </a>
+                    <a href="#" class="flex items-center px-4 py-2 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors">
+                        <div class="w-6 h-6 flex items-center justify-center mr-2">
+                            <i class="ri-twitter-x-fill text-gray-800"></i>
+                        </div>
+                        <span class="text-gray-700">Follow us on X</span>
+                    </a>
+                    <a href="#" class="flex items-center px-4 py-2 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors">
+                        <div class="w-6 h-6 flex items-center justify-center mr-2">
+                            <i class="ri-instagram-fill text-pink-600"></i>
+                        </div>
+                        <span class="text-gray-700">Follow us on Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Stay Updated on New Opportunities</h2>
+                <p class="text-gray-600 mb-8">Subscribe to our careers newsletter to receive updates on new job openings and company news.</p>
+                <div class="flex flex-col md:flex-row gap-3">
+                    <input type="email" placeholder="Enter your email" class="flex-grow px-4 py-3 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary">
+                    <button class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-opacity-90 transition-colors">Subscribe</button>
+                </div>
+                <p class="text-sm text-gray-500 mt-4">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Ready to Join Our Team?</h2>
+                <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">Explore our current openings and take the first step toward an exciting career at PinaqTech.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#openings" class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-opacity-90 transition-colors">View Openings</a>
+                    <a href="#apply" class="bg-white border border-gray-300 text-gray-700 px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:border-primary hover:text-primary transition-colors">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+            <div class="lg:col-span-2">
+                <a href="/" class="text-2xl font-['Pacifico'] text-white mb-4 inline-block">logo</a>
+                <p class="text-gray-400 mb-6 max-w-md">Providing enterprise-grade security solutions to protect your organization's most valuable assets in today's evolving threat landscape.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Services</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Consulting Services</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Managed Security</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Implementation Services</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Training Programs</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Company</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">About Us</a></li>
+                    <li><a href="https://readdy.ai/home/c9944516-aaa9-4220-ada4-2b18d7ee5c9d/d972c980-b7ed-4935-a9ce-511e00f6192a" data-readdy="true" class="text-primary hover:text-primary transition-colors">Careers</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Partners</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Blog</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">News</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                            <i class="ri-map-pin-line text-primary"></i>
+                        </div>
+                        <span class="text-gray-400">123 Security Ave, Cyber City, CA 94103</span>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                            <i class="ri-mail-line text-primary"></i>
+                        </div>
+                        <span class="text-gray-400">contact@pinaqtech.com</span>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                            <i class="ri-phone-line text-primary"></i>
+                        </div>
+                        <span class="text-gray-400">+1 (888) 123-4567</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 PinaqTech. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 text-sm hover:text-primary transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 text-sm hover:text-primary transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 text-sm hover:text-primary transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Live Chat Widget -->
+<div class="fixed bottom-6 right-6 z-50">
+    <button class="w-14 h-14 flex items-center justify-center bg-primary rounded-full shadow-lg hover:bg-opacity-90 transition-colors">
+        <i class="ri-message-3-line text-white text-2xl"></i>
+    </button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Theme Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('i');
+    const htmlElement = document.documentElement;
+
+    function setTheme(isDark) {
+        if (isDark) {
+            htmlElement.classList.add('dark');
+            themeIcon.classList.remove('ri-moon-line');
+            themeIcon.classList.add('ri-sun-line');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            htmlElement.classList.remove('dark');
+            themeIcon.classList.remove('ri-sun-line');
+            themeIcon.classList.add('ri-moon-line');
+            localStorage.setItem('theme', 'light');
+        }
+    }
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme === 'dark');
+    }
+
+    themeToggle.addEventListener('click', () => {
+        const isDark = !htmlElement.classList.contains('dark');
+        setTheme(isDark);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Department Tabs
+    const departmentTabs = document.querySelectorAll('.department-tab');
+    const departmentContents = document.querySelectorAll('.department-content');
+
+    departmentTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove active class from all tabs
+            departmentTabs.forEach(t => t.classList.remove('active'));
+            
+            // Add active class to clicked tab
+            tab.classList.add('active');
+            
+            // Hide all content sections
+            departmentContents.forEach(content => content.classList.remove('active'));
+            
+            // Show content corresponding to clicked tab
+            const departmentId = tab.getAttribute('data-department');
+            document.getElementById(`${departmentId}-content`).classList.add('active');
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Application Steps
+    const applicationSteps = document.querySelectorAll('.application-step');
+    
+    applicationSteps.forEach((step, index) => {
+        if (index === 0) {
+            step.classList.add('active');
+        }
+        
+        step.addEventListener('click', () => {
+            applicationSteps.forEach(s => s.classList.remove('active'));
+            step.classList.add('active');
+        });
+    });
+});
+</script>
+</body>
+</html>
