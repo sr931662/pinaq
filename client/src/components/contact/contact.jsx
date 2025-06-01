@@ -156,7 +156,7 @@ const Contact = () => {
                   <div className={styles.methodContent}>
                     <h3 className={styles.methodTitle}>Email Us</h3>
                     <a href="mailto:info@pinaqtech.com" className={styles.methodLink}>
-                      info@pinaqtech.com
+                      admin@pinaqtech.com
                     </a>
                   </div>
                 </div>
@@ -168,7 +168,7 @@ const Contact = () => {
                   <div className={styles.methodContent}>
                     <h3 className={styles.methodTitle}>Call Us</h3>
                     <a href="tel:+1234567890" className={styles.methodLink}>
-                      +1 (234) 567-890
+                       (+91) 9310390552
                     </a>
                   </div>
                 </div>
@@ -180,9 +180,9 @@ const Contact = () => {
                   <div className={styles.methodContent}>
                     <h3 className={styles.methodTitle}>Visit Us</h3>
                     <p className={styles.methodText}>
-                      123 Tech Street<br />
-                      San Francisco, CA 94103<br />
-                      United States
+                      Sec 23-A<br />
+                      Gurgaon HR<br />
+                      India
                     </p>
                   </div>
                 </div>
@@ -210,7 +210,7 @@ const Contact = () => {
       <section className={styles.mapSection}>
         <div className={styles.mapContainer}>
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.102370616533!2d-122.419415584682!3d37.77492997975948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sph!4v1620000000000!5m2!1sen!2sph" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8338.872607504696!2d77.0448269836197!3d28.507720880831364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d198f7c1c6ff1%3A0xf2b0aa2d0a6bde8c!2sSector%2023A%2C%20Gurugram%2C%20Haryana%20122022!5e0!3m2!1sen!2sin!4v1748764399519!5m2!1sen!2sin"
             className={styles.mapIframe}
             allowFullScreen="" 
             loading="lazy"
